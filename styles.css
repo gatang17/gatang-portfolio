@@ -745,7 +745,7 @@ header {
 }
 
 .con_hero_sub h1 {
-  font-size: clamp(3rem, 8vw, 10rem);
+  font-size: clamp(2.25rem, 8vw, 10rem);
 }
 
 .chat_hero {
@@ -768,6 +768,8 @@ header {
   text-align: left;
   text-transform: uppercase;
 }
+
+
 
 /* =============================
    9. MENUS / NAVIGATION

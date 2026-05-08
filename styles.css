@@ -1080,6 +1080,32 @@ header {
  
 }
 
+@media (max-width: 1024px) {
+  .projects-featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 790px) {
+  .projects-featured-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding-inline: 2rem;
+    justify-items: center;
+  }
+
+  .project-card {
+    width: min(100%, 360px);
+  }
+
+  .project-thumb {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+}
+
 /* =============================
    11. PROJECTS ARCHIVE PAGE
 ============================= */
@@ -1957,10 +1983,7 @@ h2 .cursor {
 } */
 
 @media (max-width: 1024px) {
-  .projects-featured-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding-inline: 2rem;
-  }
+
 
   .projects-archive-grid {
     grid-template-columns: 1fr;
@@ -2028,15 +2051,7 @@ h2 .cursor {
     padding: 0 2rem;
   }
 
-  .projects-featured-grid {
-    grid-template-columns: 1fr;
-    padding-inline: 1.5rem;
-  }
 
-  .project-thumb {
-    aspect-ratio: 16 / 11;
-    width:95%;
-  }
 
   .skills-grid {
     flex-direction: column;

@@ -144,11 +144,62 @@ function handleSectionRedirect() {
   const section = document.getElementById(sectionId);
   if (!section) return;
 
-  setTimeout(() => {
-    section.scrollIntoView({ behavior: 'smooth' });
-    history.replaceState(null, '', 'index.html');
-  }, 300);
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+  
+      history.replaceState(null, '', 'index.html');
+    }, 200);
+  });
 }
+
+function updateReusableMenuLinks() {
+  const onIndex = isIndexPage();
+
+  const links = document.querySelectorAll(
+    'a[href*="section=projects"], a[href*="section=skills"], a[href*="section=contact"], a[href="#projects"], a[href="#skills"], a[href="#contact"], a[href="index.html#projects"], a[href="index.html#skills"], a[href="index.html#contact"]'
+  );
+
+  links.forEach((link) => {
+    const href = link.getAttribute('href');
+
+    let sectionId = '';
+
+    if (href.includes('projects')) sectionId = 'projects';
+    if (href.includes('skills')) sectionId = 'skills';
+    if (href.includes('contact')) sectionId = 'contact';
+
+    if (!sectionId) return;
+
+    if (onIndex) {
+      link.setAttribute('href', `#${sectionId}`);
+
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const section = document.getElementById(sectionId);
+        if (!section) return;
+
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+
+        history.replaceState(null, '', `#${sectionId}`);
+
+        const menu = document.getElementById('navMenu');
+        if (menu) menu.classList.remove('open');
+        document.body.classList.remove('menu-open');
+      });
+    } else {
+      link.setAttribute('href', `index.html?section=${sectionId}`);
+    }
+  });
+}
+
 
 async function fetchJSON(url) {
   const response = await fetch(url);
@@ -369,10 +420,14 @@ async function injectSharedLayout() {
       hMenuContainer.innerHTML = mobileMenuHtml;
       initMobileMenu();
     }
+
+    updateReusableMenuLinks();
   } catch (error) {
     console.error('Shared layout injection error:', error);
   }
 }
+
+
 
 // =============================
 // PROJECT RENDERING
@@ -1158,3 +1213,5 @@ async function initApp() {
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
+

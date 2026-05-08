@@ -1,0 +1,583 @@
+{
+  "d_notes": [
+    {
+      "id": "dnotes",
+      "title": "Designer Notes",
+      "description": "This portfolio was designed to balance contemporary web presentation with subtle references to early web aesthetics, using structure, typography, and interaction to guide the user experience.",
+
+      "design": {
+        "direction": [
+          "Editorial layout",
+          "Structured hierarchy",
+          "Subtle nostalgic references",
+          "Handcrafted digital feel"
+        ],
+
+        "typography": ["Bricolage Grotesque", "Geist"],
+
+        "colors": [
+          {
+            "name": "Background",
+            "value": "#F2E9E1"
+          },
+          {
+            "name": "Primary Text",
+            "value": "#272C35"
+          },
+          {
+            "name": "Accent",
+            "value": "#CBA135"
+          }
+        ]
+      },
+
+      "process": {
+        "intent": "The project explores how structure, hierarchy, and interaction design can shape user perception. By combining a vertical navigation system with minimal motion and editorial layout principles, the goal was to create an experience that feels both structured and interactive without overwhelming the user.",
+        "decisions": [
+          "Vertical navigation was used to maintain spatial consistency and reinforce a clear structural hierarchy across sections.",
+          "A muted color palette was selected to reduce cognitive load and allow layout and typography to guide attention.",
+          "Background textures were kept subtle to introduce depth without competing with primary content.",
+          "Minimal transitions were applied to keep the focus on content while still providing feedback during interaction.",
+          "Interactive elements were introduced selectively to add personality without disrupting usability."
+        ]
+      },
+
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Animation Library",
+        "Lightbox"
+      ],
+
+      "gallery": [
+        {
+          "image": "sketches/foliov1.png",
+          "title": "Initial Portfolio Sketch",
+          "description": "This initial sketch explored layout hierarchy and spatial relationships between navigation, hero content, and supporting sections."
+        },
+        {
+          "image": "sketches/foliov2.png",
+          "title": "Layout Variations",
+          "description": "These variations explored a single-page structure where users can navigate between sections fluidly, reducing friction and avoiding unnecessary page transitions."
+        },
+        {
+          "image": "images/projects/personal/designInteractions.png",
+          "title": "Interaction Concept",
+          "description": "The interaction model was designed to balance clarity and engagement, introducing subtle motion and feedback without overwhelming the user."
+        },
+        {
+          "image": "images/projects/personal/ima_menu.png",
+          "type": "diagram-zone",
+          "title": "Navigation System",
+          "description": "The vertical navigation system reinforces structure and hierarchy while allowing users to move between sections efficiently without losing context within the layout."
+        },
+        {
+          "image": "images/diagram/diagram.svg",
+          "type": "diagram",
+          "title": "Visual Design & Implementation Flow",
+          "description": "This diagram shows how the website structure moves from planning into HTML, CSS, JavaScript, version control, and deployment."
+        },
+        {
+          "image": "images/projects/personal/404.png",
+          "title": "404 Experience",
+          "description": "The 404 page extends the visual system into edge cases. Motion and subtle visual changes were used to reduce friction and transform a potential dead-end into a more engaging moment."
+        }
+      ],
+
+      "github": "https://github.com/gatang17/folio"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "jgphoto",
+      "title": "J&G Photography",
+      "subtitle": "Custom Web Design",
+      "category": "Coded",
+      "cardStack": "HTML • CSS • JavaScript",
+      "year": "2025",
+      "featured": true,
+      "summary": "Custom-coded photography website focused on service presentation, gallery structure, and user flow.",
+
+      "description": {
+        "text": "This project is a custom-coded website for a photography business. The goal was to create a structure that prioritizes clarity without losing the emotional impact of the imagery. The design focuses on guiding the user through services, galleries, and booking options in a way that feels natural rather than overwhelming.",
+        "images": ["images/projects/jgphoto/jg_8.png"]
+      },
+      "challenge": {
+        "text": "The main challenge was organizing multiple photography services while maintaining a calm and visually driven experience. Photography websites often rely heavily on imagery, which can easily disrupt navigation and hierarchy. The goal was to balance strong visual content with clear structure, ensuring users could explore without feeling lost and always have a clear path toward booking or contact.",
+        "images": ["images/projects/jgphoto/jg_1.png","images/projects/jgphoto/jg_10.png"]
+      },
+      "solution": {
+       "text": "The layout was designed to guide the user progressively rather than presenting everything at once. Services are introduced as visual entry points, allowing users to choose based on context instead of reading long descriptions. A masonry-style gallery was implemented to accommodate different image proportions. Instead of forcing consistency through cropping, the layout preserves the integrity of each photograph, creating a more organic visual rhythm. The package customization system was structured to reduce cognitive load by revealing options only after a selection is made. This prevents users from mixing choices across packages and keeps the decision process focused and controlled.",
+        "images": [ "images/projects/jgphoto/jg_5.png",
+        "images/projects/jgphoto/jg_6.png",
+        "images/projects/jgphoto/jg_7.png"]
+      },
+      "impact": {
+        "text": "The final result provides a structured and intuitive experience that supports both exploration and decision-making. Users can quickly understand the type of services offered, engage with the photography style, and move toward booking without unnecessary friction. The design reinforces trust by keeping the experience simple, guided, and visually consistent.",
+        "images": [
+          "images/projects/jgphoto/jg_9.png"         
+        ]
+      },
+
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "FormSubmit",
+        "Google Maps iframe",
+        "Vercel"
+      ],
+      "roles": [
+        "UI Design",
+        "Front-End Development",
+        "Content Structuring",
+        "Responsive Design"
+      ],
+      "features": [],
+      "images": [
+        "images/projects/jgphoto/jg_0p.png",
+        "images/projects/jgphoto/jg_0m.png"
+      ],
+      "github": "https://github.com/gatang17/JGStudio/",
+      "live": "https://jgstudio.vercel.app",
+      "more": "projects.html"
+    },
+
+    {
+  "id": "handydmd",
+  "title": "Handyman DMD",
+  "subtitle": "WordPress",
+  "category": "WordPress",
+  "cardStack": "WordPress • Branding • UI • Custom CSS",
+  "year": "2025",
+  "featured": true,
+  "summary": "Service-based website focused on clarity, trust, and fast access to key actions.",
+
+  "description": {
+    "text": "This project focuses on translating a hands-on service business into a clear and trustworthy digital experience. The goal was to remove friction from the user journey by prioritizing immediate understanding of services and direct access to contact actions. Every design decision supports clarity over decoration, ensuring users can quickly recognize what is offered and how to take the next step.",
+    "images": [
+      "images/projects/handydmd/h_0d.png",
+      "images/projects/handydmd/h_0m.png"
+    ]
+  },
+
+"challenge": {
+  "text": "The business offers multiple services, which can easily overwhelm users if not structured carefully. The challenge was to present all information clearly while maintaining a sense of simplicity and trust.\n\nTo approach this, early layout sketches were used to explore how services, navigation, and call-to-action elements should be organized. This step helped define a clear hierarchy before moving into the final interface, ensuring that information would guide the user instead of competing for attention.",
+  "images": ["images/projects/handydmd/h_5.png"]
+},
+
+  "solution": {
+    "text": "The solution focuses on structured simplicity. Content was grouped into clear service categories, supported by a consistent visual hierarchy that directs attention from overview to action. Navigation was simplified to reduce cognitive load, while custom CSS adjustments refined spacing, typography, and visual rhythm. The design intentionally avoids unnecessary elements, allowing key actions like contacting or requesting services to remain highly visible.",
+    "images": ["images/projects/handydmd/h_3.png","images/projects/handydmd/h_2.png",
+      "images/projects/handydmd/h_4.png"]
+  },
+
+  "impact": {
+    "text": "The final result is a more focused and reliable user experience that improves how services are understood and how users interact with the site. By reducing visual noise and reinforcing clear pathways, the design supports faster decision-making and builds trust through consistency and clarity.",
+    "images": [
+      "images/projects/handydmd/h_1.png"
+    
+    ]
+  },
+
+  "technologies": ["WordPress"],
+  "roles": [
+    "Brand Identity",
+    "UI Design",
+    "Content Structuring",
+    "WordPress Customization",
+    "Responsive Design"
+  ],
+  "features": [],
+  "images": [
+    "images/projects/handydmd/h_0d.png",
+    "images/projects/handydmd/h_0m.png"
+  ],
+  "live": "https://handydmd.com/",
+  "github": "",
+  "more": "projects.html"
+},
+
+    {
+      "id": "aurora",
+      "title": "Aurora Wellness Center",
+      "subtitle": "WordPress",
+      "category": "WordPress",
+      "cardStack": "WordPress • Branding • UI • Custom CSS",
+      "year": "2025",
+      "featured": true,
+      "summary": "Wellness website case study focused on visual consistency, calm interaction, and brand alignment.",
+
+      "description": {
+        "text": "This project is a conceptual wellness website developed as part of a design course. The goal was to approach it as a real-world scenario, creating a complete brand and web experience from scratch rather than redesigning an existing product. Every decision was made with the intention of building a calm, cohesive, and visually aligned digital environment that reflects the values of a wellness brand.",
+        "images": [   "images/projects/aurora/a_0d.png",
+        "images/projects/aurora/a_0m.png"]
+      },
+      "challenge": {
+        "text": "Since this project was built from the ground up, the main challenge was defining a clear visual direction without relying on an existing structure. The design needed to communicate calmness, clarity, and trust while organizing different types of content in a way that felt intuitive and balanced. The focus was not only on aesthetics, but on how layout, spacing, and hierarchy could support a more relaxing and understandable user experience.",
+        "images": ["images/projects/aurora/a_1.png"]
+      },
+      "solution": {
+        "text": "The solution focused on creating a structured layout system that could guide the user naturally through the content. A consistent use of spacing, typography, and color helped reinforce a calm visual rhythm across sections. Each element was intentionally simplified to avoid visual noise, allowing the content to feel more approachable while maintaining a strong and cohesive brand identity.",
+        "images": ["images/projects/aurora/a_2.png"]
+      },
+      "impact": {
+        "text": "The final result demonstrates how a clear design system can create a cohesive and intentional experience from the ground up. The project highlights decision-making focused on user perception, readability, and emotional tone, showing how design choices can support both brand identity and usability in a wellness-focused environment.",
+        "images": [
+          "images/projects/aurora/a_3.png"
+        ]
+      },
+
+      "technologies": [
+  "WordPress",
+  "Adobe Illustrator",
+  "Custom CSS"
+],
+      "roles": [
+        "Brand Identity",
+        "UI Design",
+        "Content Structuring",
+        "WordPress Customization",
+        "Responsive Design"
+      ],
+      "features": [],
+      "images": [
+        "images/projects/aurora/a_0d.png",
+        "images/projects/aurora/a_0m.png"
+      ],
+      "live": "https://folio.gatangdesigns.io/",
+      "github": "",
+      "more": "projects.html"
+    },
+
+    {
+      "id": "quillpp",
+      "title": "Quill Pen Press",
+      "subtitle": "Webflow",
+      "category": "Webflow",
+      "cardStack": "Webflow • Branding • UI",
+      "year": "2025",
+      "featured": true,
+      "summary": "Publishing platform concept focused on structure, readability, and brand credibility.",
+
+      "description": {
+        "text": "This project is a brand and website concept for a publishing platform. The goal was to create a credible visual presence that supports readability, content exploration, and a professional identity for writers and readers.",
+        "images": ["images/projects/qpp/qpp_2.png"]
+      },
+      "challenge": {
+        "text": "The project was intentionally designed as a single-page website, which forced me to think carefully about how information should flow without overwhelming the user. Instead of relying on multiple pages, I had to prioritize what the user needs to understand first, and how each section would naturally lead to the next. The challenge became less about adding content, and more about controlling hierarchy, pacing, and clarity within a limited space.",
+        "images": ["images/projects/qpp/qpp_4.png"]
+      },
+      "solution": {
+        "text": "The solution focused on building a clear visual hierarchy before adding stylistic elements. I started by structuring content into distinct sections, each with a specific role, so the user could scan and understand the site progressively. Typography and spacing were used intentionally to guide attention — larger headings to establish entry points, controlled line lengths for readability, and consistent spacing to create rhythm between sections. Instead of designing visually first, I approached the layout as a system, ensuring that every element had a purpose and contributed to clarity and trust.",
+        "images": ["images/projects/qpp/qpp_5.png"]
+      },
+      "impact": {
+        "text": "The final concept communicates a more structured and credible publishing platform. By prioritizing hierarchy and readability, the design supports how users process information rather than relying on visual decoration alone. This approach creates a stronger sense of trust and makes the experience feel intentional, organized, and easier to navigate.",
+        "images": ["images/projects/qpp/qpp_1.png"]
+      },
+
+      "technologies": [
+        "Webflow",
+        "Illustrator",
+        "Typography System",
+        "Layout Design"
+      ],
+      "roles": [
+        "Brand Identity Design",
+        "UI Design",
+        "Layout System Design",
+        "Content Structuring",
+        "Webflow Development"
+      ],
+      "features": [
+        "Structured content layout",
+        "Consistent typography system",
+        "Modular section design",
+        "Clear visual hierarchy",
+        "Responsive layout"
+      ],
+
+      "images": [
+        "images/projects/qpp/qpp_0d.png",
+        "images/projects/qpp/qpp_0m.png"
+      ],
+      "live": "https://quillpenpress.webflow.io",
+      "github": "",
+      "more": "projects.html"
+    },
+
+    {
+      "id": "jlprezc",
+      "title": "JLPrezc Portfolio",
+      "subtitle": "Coded",
+      "category": "Client Project",
+      "cardStack": "HTML • CSS • JS",
+      "year": "2025",
+      "featured": false,
+      "summary": "Dark photography portfolio designed to keep the focus on image presentation.",
+
+      
+        "description": {
+          "text": "This project explores how to present a large body of photography without overwhelming the viewer. The primary decision was to reduce visual noise and let the images carry the experience. A dark interface was not only a stylistic choice, but a functional one, used to control contrast, guide attention, and create a consistent viewing environment across different image types.",
+          "images": ["images/projects/jlprezc/jlperezc_1.png"]
+        },
+      
+        "challenge": {
+          "text": "The main challenge was not just the number of images, but how they are perceived when presented together. Large image sets can quickly become visually chaotic if hierarchy is not controlled. The problem became defining how much content to show at once, how to group images meaningfully, and how to maintain focus without restricting exploration.",
+          "images": [
+            "images/projects/jlprezc/jlperezc_2.png",
+                       "images/projects/jlprezc/jlperezc_7.png",
+            "images/projects/jlprezc/jlperezc_4.png"
+          ]
+        },
+      
+        "solution": {
+          "text": "The gallery was designed as a controlled system rather than a simple grid. Instead of displaying all images at once, the layout limits initial exposure and allows expansion when needed. This reduces cognitive load while still supporting a large volume of content. The masonry-style arrangement preserves the natural proportions of the images, avoiding forced cropping and maintaining visual integrity. Interaction patterns such as overlays and progressive reveal were used to give users control without adding visual clutter.",
+          "images": [ "images/projects/jlprezc/jlperezc_5.png"]
+        },
+      
+        "impact": {
+          "text": "The final result is a gallery experience that feels organized without being rigid. Images remain the primary focus while the system behind them provides structure and flow. The design supports both quick browsing and deeper exploration, reflecting a balance between visual impact and usability.",
+          "images": ["images/projects/jlprezc/jlperezc_6.png"]
+        }
+      
+      ,
+
+      "technologies": [],
+      "roles": [
+        "UI Design",
+        "Front-End Development",
+        "Content Structuring",
+        "Responsive Design"
+      ],
+      "features": [],
+      "images": [
+        "images/projects/jlprezc/jlperezc_0d.png",
+        "images/projects/jlprezc/jlperezc_0m.png"
+      ],
+      "github": "https://github.com/gatang17/jlperezc.git",
+      "live": "https://jlperezc.vercel.app/",
+      "more": "projects.html"
+    },
+
+    {
+      "id": "juicysplash",
+      "title": "Juicy Splash",
+      "subtitle": "Coded",
+      "category": "Branding",
+      "cardStack": "HTML • CSS • JS",
+      "year": "2024",
+      "featured": false,
+      "summary": "Tropical brand concept with a vibrant single-page website structure.",
+
+      "description": {
+        "text": "This project explores a tropical juice brand through a bright and energetic web concept. I focused on using color and movement to communicate freshness, while keeping the layout structured enough to guide the user clearly through the experience.",
+        "images": ["images/projects/juicys_plash/js_2.png"]
+      },
+      "challenge": {
+        "text": "Because the project was designed as a single-page experience, all content had to exist within one continuous flow. The main challenge was balancing a vibrant, expressive visual style with a layout that remained clear and easy to navigate, avoiding visual overload.",
+        "images": ["images/projects/juicys_plash/js_1.png"]
+      },
+      "solution": {
+        "text": "To balance the strong visual energy of the brand, I used a simple section-based layout that guides the user through the page without overwhelming them. I introduced subtle motion elements, such as floating bubbles and a moving ticker, to reinforce the idea of freshness and fluidity while keeping the experience engaging. These elements were intentionally controlled so they added energy without distracting from the content. Spacing and hierarchy were used to ensure the interface remained readable despite the vibrant color palette and movement.",
+        "images": ["images/projects/juicys_plash/js_5.png"]
+      },
+      "impact": {
+        "text": "The final concept communicates a sense of freshness and energy while maintaining clarity. Users can move through the experience intuitively, showing that a vibrant visual direction can still support usability when guided by structure and hierarchy.",
+        "images": ["images/projects/juicys_plash/js_4.png"]
+      },
+
+      "technologies": ["Illustrator", "HTML", "CSS", "JS"],
+      "roles": [
+        "UI Design",
+        "Front-End Development",
+        "Content Structuring",
+        "Responsive Design"
+      ],
+      "features": [],
+      "images": [
+        "images/projects/juicys_plash/js_0d.png",
+        "images/projects/juicys_plash/js_0m.png",
+        "images/projects/juicys_plash/js_1.png"
+      ],
+      "github": "https://github.com/gatang17/creative_portfolio.git",
+      "live": "https://juicysplash.vercel.app/",
+      "more": "projects.html"
+    },
+
+    {
+      "id": "berrysweet",
+      "title": "Berry Sweet",
+      "subtitle": "Figma",
+      "category": "UI Design",
+      "cardStack": "Figma",
+      "year": "2026",
+      "featured": false,
+      "summary": "Dessert UI concept focused on emotional tone, softness, and visual balance.",
+
+      "description": {
+        "text": "This project translates a dessert concept into a soft and visually engaging interface. The focus was on creating an emotional tone through color, shape, imagery, and layout balance.",
+        "images": ["images/projects/berry_sweet/bs_4.png"]
+      },
+      "challenge": {
+        "text": "Because the project was designed as a single-page concept, the content needed to feel complete without becoming crowded. The challenge was to express sweetness and warmth while keeping the interface balanced and easy to understand.",
+        "images": []
+      },
+      "solution": {
+        "text": "A soft palette, rounded visual language, and simple content structure were used to create a pleasant user experience. The layout keeps the concept cohesive while allowing the visuals to carry the emotional tone.",
+        "images": ["images/projects/berry_sweet/bs_3.png"]
+      },
+      "impact": {
+        "text": "The final design communicates the dessert concept clearly and creates a stronger emotional connection through visual style, softness, and consistency.",
+        "images": [
+          "images/projects/berry_sweet/bs_1.png",
+          "images/projects/berry_sweet/bs_2.png"
+        ]
+      },
+
+      "technologies": ["Figma"],
+      "roles": ["UI Design"],
+      "features": [],
+      "images": [
+        "images/projects/berry_sweet/bs_0d.png",
+        "images/projects/berry_sweet/bs_0m.png"
+      ],
+      "github": "",
+      "live": "",
+      "more": "projects.html"
+    }
+  ],
+
+  "skills": [
+    {
+      "id": "graphic",
+      "title": "Graphic Design",
+      "overlay": "Graphic Design",
+      "points": [
+        "Brand identity development",
+        "Editorial and layout design",
+        "Typography systems",
+        "Visual hierarchy and composition"
+      ],
+      "tools": ["Adobe Creative Suite"]
+    },
+    {
+      "id": "uiux",
+      "title": "Digital Design",
+      "overlay": "Digital Design",
+      "points": [
+        "Creating clear and easy-to-use websites",
+        "Planning layouts and visual flow",
+        "Choosing typography and color for readability",
+        "Designing with users in mind"
+      ],
+      "tools": ["Figma", "Adobe XD"]
+    },
+    {
+      "id": "html",
+      "title": "Web Implementation",
+      "overlay": "HTML/CSS/JS",
+      "points": [
+        "Translating design concepts into functional websites",
+        "Building responsive and visually consistent layouts",
+        "Adding interactions to support user experience",
+        "Maintaining design consistency across devices"
+      ],
+      "tools": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+    }
+  ],
+
+  "about": [
+    {
+      "pageTitle": "Resume",
+      "personal": {
+        "name": "GRETEL ALVAREZ TANG",
+        "phone": "(502) 345-8298",
+        "email": "gretelalvareztang@gmail.com",
+        "website": "https://gatangdesigns.io"
+      },
+      "education": [
+        {
+          "institution": "Jefferson Community & Technical College",
+          "location": "Louisville, KY",
+          "degree": "Associate of Applied Science\nCommunication Arts Technology: Advertising Design Option",
+          "graduation": "Dec 2026"
+        },
+        {
+          "institution": "University Oscar Lucero",
+          "location": "Holguín, Cuba",
+          "degree": "Bachelor’s Degree in Computer Engineering",
+          "graduation": "Jun 2011"
+        }
+      ],
+      "skills & abilities": [
+        "Design: Adobe Creative Suite",
+        "Web: HTML, CSS, JavaScript",
+        "Technical Foundation: SQL, Java",
+        "Technical and creative workflow support",
+        "Strong communication and teamwork",
+        "Bilingual: English and Spanish"
+      ],
+      "experience": [
+        {
+          "title": "Federal Work-Study Student Worker",
+          "organization": "Jefferson Community & Technical College Print Lab",
+          "location": "Louisville, KY",
+          "period": "Oct 2024 – Present",
+          "responsibilities": [
+            "Provide CAT Lab assistance by supporting students with photo printing, mounting, and Adobe Creative Suite programs.",
+            "Maintain the photography studio, printing lab, and classroom clean, organized, and secure.",
+            "Sell printing supplies and handle cash transactions accurately.",
+            "Troubleshoot basic software and printing equipment issues.",
+            "Ensure compliance with program rules and operational standards."
+          ]
+        },
+        {
+          "title": "Newborn Photographer & Sales Specialist",
+          "organization": "Bella Baby Photography",
+          "location": "Louisville, KY",
+          "period": "Aug 2023 – Aug 2024",
+          "responsibilities": [
+            "Conducted professional photo sessions and edited images.",
+            "Applied color correction and composition adjustments.",
+            "Guided clients through product selection and customized packages.",
+            "Managed client communication and order processing."
+          ]
+        },
+        {
+          "title": "Freelance Photographer & Editor Assistant",
+          "organization": "Estudio Esplendor",
+          "location": "Holguín, Cuba",
+          "period": "May 2017 – Mar 2022",
+          "responsibilities": [
+            "Managed photography projects from concept to final delivery.",
+            "Performed professional image editing, retouching, and color grading.",
+            "Collaborated with clients on portraits, events, and commercial projects.",
+            "Maintained organized digital archives and asset management."
+          ]
+        },
+        {
+          "title": "Oracle Database Administrator / Data Analyst",
+          "organization": "ONAT",
+          "location": "Holguín, Cuba",
+          "period": "2011 – 2016",
+          "responsibilities": [
+            "Managed Oracle databases and SQL systems.",
+            "Organized and analyzed institutional data for reporting and needs.",
+            "Maintained data integrity, structured storage, and system reliability.",
+            "Supported internal teams with technical troubleshooting."
+          ]
+        }
+      ],
+      "awards": [
+        "Dean’s List – Distinction for Scholastic Achievement, 2025",
+        "Phi Theta Kappa Honor Society – Lifetime Member",
+        "Recipient of Jubilee Scholarship"
+      ]
+    }
+  ]
+}

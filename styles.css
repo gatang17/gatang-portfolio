@@ -731,7 +731,7 @@ header {
   justify-content: start;
   gap: 50px;
   width: 100%;
-  padding: 5rem;
+  padding: clamp(20px, 5vw, 3rem);
 }
 
 .con_hero_sub {
@@ -2036,8 +2036,7 @@ h2 .cursor {
 
   .con_hero {
     display: block;
-    padding: 3rem 2rem;
-  }
+   }
 
   .con_hero_sub {
     padding: 0;

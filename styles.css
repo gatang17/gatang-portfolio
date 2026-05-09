@@ -1676,7 +1676,7 @@ header {
 .skill-overlay span {
   transform: rotate(270deg); 
   text-transform: uppercase;
-  font-size: clamp(1.25rem, 2vw, 2.25rem );
+  font-size: clamp(1.25rem, 2vw, 2.15rem );
   letter-spacing: 5px;
   text-align: center;
 }

@@ -2,12 +2,9 @@
 // GOOGLE ANALYTICS
 // =============================
 window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'G-X2R58E5647');
-
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());  
+gtag('config', 'G-BYEHMP81Y0');
 
 
 // =============================

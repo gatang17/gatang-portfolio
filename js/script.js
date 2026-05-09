@@ -463,10 +463,16 @@ function renderFeaturedProjects(data) {
 }
 
 function createArchiveProjectCard(project) {
+  const imageSrc = getResponsiveImage(project.images);
+
   return `
     <article class="archive-card" data-id="${escapeHtml(project.id)}">
       <div class="archive-thumb">
-       <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(project.title)} preview image" loading="lazy" decoding="async">
+        <img 
+          src="${escapeHtml(imageSrc)}"
+          alt="${escapeHtml(project.title)} preview image"
+          loading="lazy"
+          decoding="async">
       </div>
 
       <div class="archive-copy">
@@ -475,9 +481,9 @@ function createArchiveProjectCard(project) {
         <p>${escapeHtml(project.summary || project.description || '')}</p>
 
         <div class="archive-links">
-        <div class="icon-circle">
-       <i class="fa-solid fa-arrow-right-long"></i>
-        </div>
+          <div class="icon-circle">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
         </div>
       </div>
     </article>`;

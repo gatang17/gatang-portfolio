@@ -1674,9 +1674,11 @@ header {
 }
 
 .skill-overlay span {
-  /* transform: rotate(270deg); */
+  transform: rotate(270deg); 
   text-transform: uppercase;
-  font-size: clamp(1rem, 2vw, 1.3rem );
+  font-size: clamp(1.25rem, 2vw, 3rem );
+  letter-spacing: 5px;
+  text-align: center;
 }
 
 .skill.active .skill-overlay {
@@ -2067,9 +2069,9 @@ h2 .cursor {
     min-height: 140px;
   }
 
-/*   .skill-overlay span {
+  .skill-overlay span {
     transform: rotate(0deg);
-  } */
+  } 
 
   .wrap_form {
     flex-direction: column;

@@ -1,165 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap 5 CSS -->
-    <link      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"      rel="stylesheet"  />
+  <title>About Me - Gretel Alvarez Tang</title>
 
-    <!-- FontAwesome -->
-    <script      src="https://kit.fontawesome.com/8fb3a30aab.js"      crossorigin="anonymous"    ></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Custom CSS -->   
-     <link rel="stylesheet" href="styles.css" /> 
-      </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800;900&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <body>
-    <!-- HEADER -->
-    <header class="row justify-content-between py-3 mx-2">
-      <div id="header-container"></div>
-    </header>
+  <link rel="stylesheet" href="styles.css" />
 
-    <section id="aboutme" class="content">
-        <div  class="t-border">
-          <h2  class="title">About Me</h2> 
-            
+  <style>
+    .about-page-body {
+      background-color: var(--background-color);
+      color: var(--color-font-body);
+    }
+
+    .about-personal-hero {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      min-height: 78vh;
+      display: grid;
+      align-items: center;
+      padding: 5rem 3rem;
+      background-image: url(images/projects/personal/backgound-1.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about-hero-inner {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-kicker {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--primary-yellow);
+    }
+
+    .about-personal-hero h1 {
+      max-width: 820px;
+      margin-bottom: 1.5rem;
+      color: var(--soft-color);
+    }
+
+    .about-hero-copy {
+      max-width: 640px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: rgba(39, 44, 53, 0.82);
+    }
+
+    .about-portrait-card {
+      justify-self: center;
+      width: min(100%, 360px);
+      padding: 1.25rem;
+      border: 1px solid rgba(63, 69, 80, 0.14);
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .about-portrait-card img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      filter: grayscale(10%);
+    }
+
+    .about-portrait-note {
+      margin-top: 1rem;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      color: rgba(39, 44, 53, 0.7);
+    }
+
+    .about-section {
+      padding: 5rem 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-label {
+      color: var(--primary-yellow);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 700;
+      font-size: 0.82rem;
+    }
+
+    .about-text-block p {
+      max-width: 68ch;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: rgba(39, 44, 53, 0.84);
+    }
+
+    .about-values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .about-value-card {
+      min-height: 220px;
+      padding: 1.5rem;
+      border: 1px solid rgba(63, 69, 80, 0.12);
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .about-value-card span {
+      color: var(--primary-yellow);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+
+    .about-value-card h3 {
+      margin: 1rem 0;
+      font-size: 1.55rem;
+      line-height: 1;
+    }
+
+    .about-value-card p {
+      font-size: 0.98rem;
+      line-height: 1.55;
+      color: rgba(39, 44, 53, 0.78);
+    }
+
+    .about-quote {
+      width: min(980px, 100%);
+      margin: 2rem auto 0;
+      padding: 3rem;
+      border-left: 4px solid var(--primary-yellow);
+      background: var(--soft-color);
+      color: var(--background-color);
+    }
+
+    .about-quote p {
+      margin: 0;
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      text-transform: uppercase;
+      color: var(--background-color);
+    }
+
+    .about-soft-list {
+      display: grid;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .about-soft-list li {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 1rem;
+      align-items: start;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .about-soft-list i {
+      color: var(--primary-yellow);
+      margin-top: 0.35rem;
+    }
+
+    .about-cta {
+      padding: 4rem 0 6rem;
+      text-align: center;
+    }
+
+    .about-cta p {
+      max-width: 620px;
+      margin: 1rem auto 0;
+      color: rgba(39, 44, 53, 0.78);
+    }
+
+    @media (max-width: 900px) {
+      .about-hero-inner,
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .about-personal-hero {
+        min-height: auto;
+        padding: 4rem 2rem;
+      }
+
+      .about-portrait-card {
+        justify-self: start;
+      }
+
+      .about-values {
+        grid-template-columns: 1fr;
+      }
+
+      .about-quote {
+        padding: 2rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .about-personal-hero {
+        padding: 3rem 1.5rem;
+      }
+
+      .about-section {
+        padding: 3.5rem 0;
+      }
+
+      .about-value-card {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body class="secondary-page about-page-body">
+
+  <header class="row justify-content-between py-3 mx-2">
+    <div id="header-container"></div>
+  </header>
+
+  <nav id="breadcrumb" class="breadcrumb-nav"></nav>
+
+  <main class="secondary-main">
+
+    <section class="about-personal-hero" data-aos="fade-up">
+      <div class="about-hero-inner">
+        <div>
+          <span class="text-xs uppercase about-kicker">About Me</span>
+
+          <h1>Design starts with noticing.</h1>
+
+          <p class="about-hero-copy">
+            I am a graphic designer and web design student who enjoys creating digital experiences with personality, structure, and intention. I like when a project feels clear, but also carries small details that make people stop, look closer, and remember it.
+          </p>
         </div>
-        <div style="display: flex;justify-items: flex-end; justify-content: flex-end; align-items: flex-end; align-content: flex-end; padding: 3rem;">
-            <div class="" style="max-width: 500px; max-height: fit-content!important; padding: 0rem;">
-                <h2 class="h_type">  Hi, Im Gretel </h2>
-               
-                <p>Hi, I'm Gretel! Here's a little about me: I love design and photography. They aren't my major, but I really enjoy creating things that can catch people's interest and make them think.</p>
-            </div> 
-             </div> 
-        
-        <div class="container-custom">
-            
-            <div class="main-box" id="display-box">
-                
-                </div>
-          
-            <div class="sidebar" id="sidebar">
-               
-            </div>
-            
-          </div>
-    
+
+        <div class="about-portrait-card" data-aos="zoom-in">
+          <img src="images/projects/personal/0-2.jpg" alt="Portrait of Gretel Alvarez Tang">
+          <p class="about-portrait-note">
+            I see design as a way to organize ideas, emotions, and visual signals into something people can understand and connect with.
+          </p>
+        </div>
+      </div>
     </section>
-    <style>
-        /*=================================================RESUME*/
-.container-custom {
-    display: flex;
-  flex-wrap: wrap; 
-  gap: 30px;             /* espacio entre items */
-  justify-content: flex-start; 
-  padding: 3rem;
-}
 
-/* MAIN */
-.main-box {
-  width: 60%;
-  min-height: 400px;
-  padding: 15px;
-}
+    <section class="about-section">
+      <div class="about-grid" data-aos="fade-up">
+        <div>
+          <span class="about-label">How I think</span>
+          <h2 class="mt-3">Every project starts with an idea.</h2>
+        </div>
 
-.main-box img {
-  width: 100%;
-  display: block;
-  flex: 0 0 auto;
-}
+        <div class="about-text-block">
+          <p>
+            For me, design is not only about making something look finished. It is about asking what the project is trying to say, who it is speaking to, and what feeling should stay with the person after seeing it.
+          </p>
 
-.description {
-  margin-top: 15px;
-}
+          <p>
+            I like working with visual structure, typography, color, and interaction because each one can change how a message is perceived. Sometimes the smallest detail becomes the thing that gives a project its voice.
+          </p>
+        </div>
+      </div>
 
-/* SIDEBAR */
-.sidebar {
-  width: 35%;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex: 0 0 auto;
-}
+      <div class="about-values" data-aos="fade-up">
+        <article class="about-value-card">
+          <span>01</span>
+          <h3>Meaning</h3>
+          <p>I like adding details that have a reason behind them, even when they are subtle.</p>
+        </article>
 
-/* CATEGORY */
-.category {
+        <article class="about-value-card">
+          <span>02</span>
+          <h3>Clarity</h3>
+          <p>I care about structure because a design should feel interesting without becoming confusing.</p>
+        </article>
 
+        <article class="about-value-card">
+          <span>03</span>
+          <h3>Curiosity</h3>
+          <p>I enjoy trying new ideas, especially when they make a project feel more alive.</p>
+        </article>
+      </div>
+    </section>
 
-  overflow: hidden;
-}
+    <section class="about-section">
+      <div class="about-quote" data-aos="fade-up">
+        <p>Sometimes a good design is the one that makes people look twice.</p>
+      </div>
+    </section>
 
-/* HEADER */
-.cat-header {
-    border-bottom: solid #a9a483;;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
+    <section class="about-section">
+      <div class="about-grid" data-aos="fade-up">
+        <div>
+          <span class="about-label">What I bring</span>
+          <h2 class="mt-3">A mix of design, code, and visual storytelling.</h2>
+        </div>
 
-/* PLUS ROTATION */
-.plus {
-  transition: transform 0.3s ease;
-}
+        <div>
+          <ul class="about-soft-list">
+            <li>
+              <i class="fa-solid fa-circle-dot"></i>
+              <span>I can think visually, but I also care about how a website works and how users move through it.</span>
+            </li>
 
-.category.open .plus {
-  transform: rotate(45deg); /* + → × */
-}
+            <li>
+              <i class="fa-solid fa-circle-dot"></i>
+              <span>I enjoy combining graphic design, branding, web layout, and front-end development.</span>
+            </li>
 
-/* ITEMS (ANIMACIÓN REAL) */
-.items {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  display: flex;
-  flex-direction: column;
-}
+            <li>
+              <i class="fa-solid fa-circle-dot"></i>
+              <span>I am still learning, but I like building projects that feel personal instead of generic.</span>
+            </li>
 
-/* CUANDO ABRE */
-.category.open .items {
-  max-height: 2000px; /* suficiente para contenido */
-}
+            <li>
+              <i class="fa-solid fa-circle-dot"></i>
+              <span>I pay attention to the relationship between color, emotion, hierarchy, and user experience.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-/* ITEM */
-.item {
-  padding: 8px 10px;
-  min-height: 80px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
+    <section class="about-cta" data-aos="fade-up">
+      <span class="text-xs uppercase">Let’s connect</span>
+      <h2 class="mt-3">Have a project in mind?</h2>
+      <p>
+        I am interested in projects where design can communicate clearly, feel intentional, and still have room for personality.
+      </p>
 
-.item:hover {
-  background: #a9a483;
-}
+      <div class="projects-cta">
+        <a href="index.html?section=contact" class="projects-btn btn text-xs">Contact Me</a>
+        <a href="projects.html" class="btn m_text text-xs">View Projects</a>
+      </div>
+    </section>
 
-/* ACTIVO */
-.item.active {
-    color: #a9a483;
-    background-color: #2f2f2f;
-}
-@media (max-width: 768px) {
-  .main-box,
-  .sidebar {
-    width: 100%; /* ocupa toda la fila */
-  }
+  </main>
 
-  .container-custom {
-    justify-content: center; /* opcional, centra items si son más estrechos */
-  }
-}
-</style>
-    <script>
+  <div id="footer-container"></div>
 
-    </script>
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom JS -->
-   <script src="js/script.js"></script> 
-    <div id="footer-container"></div>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>

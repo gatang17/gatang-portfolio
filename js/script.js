@@ -27,6 +27,10 @@ function initBreadcrumbs() {
     trail.push({ label: 'Resume', url: 'resume.html' });
   }
 
+  if (path.includes('about.html')) {
+    trail.push({ label: 'About Me', url: 'about.html' });
+  }
+
   bc.innerHTML = trail
     .map((item, i) => {
       if (i === trail.length - 1) {

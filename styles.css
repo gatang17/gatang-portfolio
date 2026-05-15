@@ -29,7 +29,9 @@ html {
 *::after {
   box-sizing: border-box;
 }
-
+.fancybox__container {
+  z-index: 999999 !important;
+}
 
 body {
   min-height: 100vh;
@@ -1843,6 +1845,235 @@ header {
 
   .thinking-link {
     width: 100%;
+  }
+}
+
+
+/* =========================
+   SHARED SPLIT SECTION HEAD
+========================= */
+
+.section-split-head {
+  display: grid;
+  gap: 4rem;
+
+}
+.section-split-head {
+  align-items: flex-end;
+}
+
+.section-split-head p {
+  border-left: 2px solid rgba(209, 154, 26, 0.7);
+  padding-left: 1.5rem;
+  max-width: 420px;
+  margin: 0;
+}
+
+.section-title-compact {
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  max-width: 700px;
+}
+
+
+/* PROJECTS HEADER ADJUSTMENT */
+
+#projects .section-split-head {
+  padding-bottom: 1rem;
+}
+
+#projects .section-split-head p {
+  color: rgba(242, 230, 217, 0.75);
+}
+
+/* responsive */
+
+@media (max-width: 790px) {
+  .section-split-head {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .section-title-compact {
+    font-size: clamp(3rem, 15vw, 4.8rem);
+  }
+
+  .section-split-head p {
+    border-left: none;
+    border-top: 2px solid rgba(209, 154, 26, 0.7);
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+}
+/* =========================
+   VISUAL NOTES SECTION
+========================= */
+
+.visual-notes-section {
+  background: var(--soft-color);
+  color: var(--background-color);
+  overflow: hidden;
+}
+
+.visual-notes-shell {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+}
+
+/* header */
+.visual-notes-head {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 0 5rem 2rem;
+}
+
+.visual-notes-head .section-title-wrap {
+  padding-right: 3rem;
+}
+
+.visual-notes-head span {
+  color: var(--primary-yellow);
+}
+
+.visual-notes-head h2 {
+  color: var(--background-color);
+}
+
+.visual-notes-head p {
+  max-width: 520px;
+  margin: 0;
+  color: rgba(242, 230, 217, 0.72);
+  line-height: 1.7;
+}
+
+/* masonry */
+.visual-notes-masonry {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 90px;
+  gap: 1rem;
+  width: min(100%, 1380px);
+  margin: 0 auto;
+  padding: 1rem 3rem 0;
+}
+
+.visual-note {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.045);
+  transition: transform 0.28s ease, opacity 0.28s ease;
+}
+
+.visual-note img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.visual-note:hover {
+  transform: translateY(-4px);
+}
+
+.visual-note:hover img {
+  transform: scale(1.035);
+  opacity: 0.88;
+}
+
+/* controlled collage sizes */
+.visual-note-large {
+  grid-column: span 3;
+  grid-row: span 5;
+}
+
+.visual-note-medium {
+  grid-column: span 3;
+  grid-row: span 4;
+}
+
+.visual-note-wide {
+  grid-column: span 4;
+  grid-row: span 3;
+}
+
+.visual-note-photo {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  .visual-notes-head {
+    padding-inline: 2rem;
+  }
+
+  .visual-notes-masonry {
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 85px;
+    padding-inline: 2rem;
+  }
+
+  .visual-note-large,
+  .visual-note-medium {
+    grid-column: span 3;
+    grid-row: span 4;
+  }
+
+  .visual-note-wide {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+
+  .visual-note-photo {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+}
+
+@media (max-width: 790px) {
+  .visual-notes-head {
+    padding-inline: 2rem;
+  }
+
+  .visual-notes-head .section-title-wrap {
+    border-right: none;
+    border-bottom: 1px solid rgba(209, 154, 26, 0.7);
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+
+  .visual-notes-masonry {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+    gap: 0.85rem;
+    padding-inline: 2rem;
+  }
+
+  .visual-note-large,
+  .visual-note-medium,
+  .visual-note-wide,
+  .visual-note-photo {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .visual-note-wide {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .visual-notes-head,
+  .visual-notes-masonry {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .visual-notes-masonry {
+    grid-auto-rows: 130px;
   }
 }
 

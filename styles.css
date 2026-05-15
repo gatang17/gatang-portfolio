@@ -1843,9 +1843,7 @@ header {
     font-size: clamp(2.4rem, 13vw, 4rem);
   }
 
-  .thinking-link {
-    width: 100%;
-  }
+
 }
 
 

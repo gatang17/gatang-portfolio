@@ -410,17 +410,17 @@
     },
 
     {
-      "id": "gtangstudio",
-      "title": "GTANG STUDIO",
+      "id": "gatangstudio",
+      "title": "GATANG STUDIO",
       "subtitle": "Editorial Branding & Web Concept",
       "category": "Brand Identity",
       "cardStack": "Figma",
       "year": "2026",
       "featured": true,
-      "summary": "Conceptual creative studio identity combining editorial layouts, industrial-inspired typography, and strategic visual storytelling.",
+      "summary": "Conceptual personal creative studio identity combining editorial layouts, industrial-inspired typography, and strategic visual storytelling.",
     
       "description": {
-        "text": "GTANG Studio is a conceptual branding and web design project created to explore a more editorial and visually structured approach to digital design. Inspired by industrial typography, architecture, print systems, and modern editorial layouts, the project combines bold typography, strong hierarchy, and minimal color accents to create a distinctive studio identity.",
+        "text": "GTANG Studio is a personal branding and web design project created to explore a more editorial and visually structured approach to digital design. Inspired by industrial typography, architecture, print systems, and modern editorial layouts, the project combines bold typography, strong hierarchy, and minimal color accents to create a distinctive studio identity.",
         "images": [
        
         ]

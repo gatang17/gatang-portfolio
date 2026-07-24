@@ -254,6 +254,65 @@
     },
 
     {
+      "id": "hiraldowoodresin",
+      "title": "Hiraldo Wood Resin",
+      "subtitle": "WordPress",
+      "category": "WordPress",
+      "cardStack": "WordPress • WooCommerce • Custom PHP/JS • Branding",
+      "year": "2026",
+      "featured": true,
+      "summary": "Custom WooCommerce build for a live-edge wood and resin artist, combining a dynamic design library, a multi-step customization form, and a fully custom design system.",
+    
+      "description": {
+        "text": "This project is a full e-commerce and custom-commission website for a woodworking and resin artist. Beyond a standard WooCommerce shop, the build includes a dynamic 'Design Library' where customers can select existing sketches and carry that reference directly into a multi-step customization request, plus a fully documented design system covering color, typography, and reusable components.",
+        "images": ["images/projects/hwd/hwr_0d.png", "images/projects/hwd/hwr_0m.png"]
+      },
+      "challenge": {
+        "text": "The client's needs evolved significantly mid-project: an initial 'completed work' gallery had to be rebuilt into a 'Design Library' where each sketch links directly into the customization form, carrying the selected design's title and image as context. This required connecting two separate custom post types and forms through URL parameters and JavaScript, while avoiding duplicate script execution across pages that share form field names. A second challenge was styling deeply nested WooCommerce and form plugin markup, which required resolving CSS specificity conflicts against third-party plugin styles rather than relying on simple class overrides.",
+        "images": ["images/projects/hwd/hwr_1.png"]
+      },
+      "solution": {
+        "text": "A custom PHP shortcode queries a dedicated 'sketches' post type and renders each design with a button that passes its title and image URL as query parameters to the customization form. A scoped JavaScript snippet reads those parameters, pre-fills the message field, displays a visual reference above it, and appends the reference link at submission time without ever showing it to the user. Each script checks for its target form's unique ID before running, preventing cross-page conflicts. On the styling side, a full design system was built from a client-approved color and typography reference, using CSS custom properties for a single source of truth, with targeted high-specificity selectors to override WooCommerce Blocks and Forminator's default styles consistently across desktop and mobile.",
+        "images": ["images/projects/hwd/hwr_2.png", "images/projects/hwd/hwr_3.png"]
+      },
+      "impact": {
+        "text": "The final site gives the client a clear, scalable way to showcase available designs and convert interest directly into a structured quote request, reducing back-and-forth communication before a project even starts. The design system means future style changes only need to happen in one place, and the responsive fixes ensure the experience holds up across devices despite the site's complexity.",
+        "images": ["images/projects/hwd/hwr_4.png"]
+      },
+    
+      "technologies": [
+        "WordPress",
+        "WooCommerce",
+        "Custom Post Types (CPT UI)",
+        "Forminator",
+        "Custom PHP",
+        "JavaScript",
+        "Custom CSS"
+      ],
+      "roles": [
+        "Web Design",
+        "WordPress Development",
+        "Custom PHP/JS Development",
+        "Design System Creation",
+        "Responsive Design"
+      ],
+      "features": [
+        "Dynamic Design Library connected to a custom quote form",
+        "Multi-step conditional customization form",
+        "Custom design system with reusable CSS components",
+        "Cross-page reference passing via URL parameters",
+        "Responsive layout across shop, gallery, and forms"
+      ],
+      "images": [
+        "images/projects/hwr/hwr_0d.png",
+        "images/projects/hwr/hwr_0m.png"
+      ],
+      "live": "https://hwr.gatangdesigns.io",
+      "github": "",
+      "more": "projects.html"
+    },
+
+    {
       "id": "quillpp",
       "title": "Quill Pen Press",
       "subtitle": "Webflow",

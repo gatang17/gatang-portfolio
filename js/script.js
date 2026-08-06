@@ -520,8 +520,8 @@ function renderProjectsArchive(data) {
         <div class="project-hero-content">
           <span class="archive-subtitle">${hero.category}</span>
           <h3>${hero.title}</h3>
-          <p>${hero.summary || ''}</p>    
-             <div class="archive-links d-flex justify-content-end">
+          <p>${hero.summary || ''}</p> 
+          <div class="archive-links d-flex justify-content-end">
         <div class="icon-circle">
        <i class="fa-solid fa-arrow-right-long"></i>
         </div>

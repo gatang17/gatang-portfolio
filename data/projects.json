@@ -258,11 +258,10 @@
       "title": "Hiraldo Wood Resin",
       "subtitle": "WordPress",
       "category": "WordPress",
-      "cardStack": "WordPress • WooCommerce • Custom PHP/JS • Branding",
+      "cardStack": "This is a live client project currently in its final phase, and that product photography is pending the client's photographer, so some visuals shown are placeholders for demonstration purposes.",
       "year": "2026",
       "featured": true,
-      "summary": "Custom WooCommerce build for a live-edge wood and resin artist, combining a dynamic design library, a multi-step customization form, and a fully custom design system.",
-    
+      "summary": "Custom WooCommerce build for a live-edge wood and resin artist, combining a dynamic design library, a multi-step customization form, and a fully custom design system. This is a live client project currently in its final phase, and product photography is pending the client's photographer, so some visuals shown are placeholders for demonstration purposes.",
       "description": {
         "text": "This project is a full e-commerce and custom-commission website for a woodworking and resin artist. Beyond a standard WooCommerce shop, the build includes a dynamic 'Design Library' where customers can select existing sketches and carry that reference directly into a multi-step customization request, plus a fully documented design system covering color, typography, and reusable components.",
         "images": ["images/projects/hwr/hwr_0d.png", 

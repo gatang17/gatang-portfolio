@@ -808,7 +808,7 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  min-width: 300px;
+  min-width: 350px;
   height: 100vh;
   padding-right: 1rem;
   text-align: right;

@@ -90,168 +90,6 @@
   ],
 
   "projects": [
-    {
-      "id": "jgphoto",
-      "title": "J&G Photography",
-      "subtitle": "Custom Web Design",
-      "category": "Coded",
-      "cardStack": "HTML • CSS • JavaScript",
-      "year": "2025",
-      "featured": true,
-      "summary": "Custom-coded photography website focused on service presentation, gallery structure, and user flow.",
-
-      "description": {
-        "text": "This project is a custom-coded website for a photography business. The goal was to create a structure that prioritizes clarity without losing the emotional impact of the imagery. The design focuses on guiding the user through services, galleries, and booking options in a way that feels natural rather than overwhelming.",
-        "images": ["images/projects/jgphoto/jg_8.png"]
-      },
-      "challenge": {
-        "text": "The main challenge was organizing multiple photography services while maintaining a calm and visually driven experience. Photography websites often rely heavily on imagery, which can easily disrupt navigation and hierarchy. The goal was to balance strong visual content with clear structure, ensuring users could explore without feeling lost and always have a clear path toward booking or contact.",
-        "images": ["images/projects/jgphoto/jg_1.png","images/projects/jgphoto/jg_10.png"]
-      },
-      "solution": {
-       "text": "The layout was designed to guide the user progressively rather than presenting everything at once. Services are introduced as visual entry points, allowing users to choose based on context instead of reading long descriptions. A masonry-style gallery was implemented to accommodate different image proportions. Instead of forcing consistency through cropping, the layout preserves the integrity of each photograph, creating a more organic visual rhythm. The package customization system was structured to reduce cognitive load by revealing options only after a selection is made. This prevents users from mixing choices across packages and keeps the decision process focused and controlled.",
-        "images": [ "images/projects/jgphoto/jg_5.png",
-        "images/projects/jgphoto/jg_6.png",
-        "images/projects/jgphoto/jg_7.png"]
-      },
-      "impact": {
-        "text": "The final result provides a structured and intuitive experience that supports both exploration and decision-making. Users can quickly understand the type of services offered, engage with the photography style, and move toward booking without unnecessary friction. The design reinforces trust by keeping the experience simple, guided, and visually consistent.",
-        "images": [
-          "images/projects/jgphoto/jg_9.png"         
-        ]
-      },
-
-      "technologies": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Bootstrap",
-        "FormSubmit",
-        "Google Maps iframe",
-        "Vercel"
-      ],
-      "roles": [
-        "UI Design",
-        "Front-End Development",
-        "Content Structuring",
-        "Responsive Design"
-      ],
-      "features": [],
-      "images": [
-        "images/projects/jgphoto/jg_0p.png",
-        "images/projects/jgphoto/jg_0m.png"
-      ],
-      "github": "https://github.com/gatang17/JGStudio/",
-      "live": "https://jgstudio.vercel.app",
-      "more": "projects.html"
-    },
-
-    {
-  "id": "handydmd",
-  "title": "Handyman DMD",
-  "subtitle": "WordPress",
-  "category": "WordPress",
-  "cardStack": "WordPress • Branding • UI • Custom CSS",
-  "year": "2025",
-  "featured": true,
-  "summary": "Service-based website focused on clarity, trust, and fast access to key actions.",
-
-  "description": {
-    "text": "This project focuses on translating a hands-on service business into a clear and trustworthy digital experience. The goal was to remove friction from the user journey by prioritizing immediate understanding of services and direct access to contact actions. Every design decision supports clarity over decoration, ensuring users can quickly recognize what is offered and how to take the next step.",
-    "images": [
-      "images/projects/handydmd/h_0d.png",
-      "images/projects/handydmd/h_0m.png"
-    ]
-  },
-
-"challenge": {
-  "text": "The business offers multiple services, which can easily overwhelm users if not structured carefully. The challenge was to present all information clearly while maintaining a sense of simplicity and trust.\n\nTo approach this, early layout sketches were used to explore how services, navigation, and call-to-action elements should be organized. This step helped define a clear hierarchy before moving into the final interface, ensuring that information would guide the user instead of competing for attention.",
-  "images": ["images/projects/handydmd/h_5.png"]
-},
-
-  "solution": {
-    "text": "The solution focuses on structured simplicity. Content was grouped into clear service categories, supported by a consistent visual hierarchy that directs attention from overview to action. Navigation was simplified to reduce cognitive load, while custom CSS adjustments refined spacing, typography, and visual rhythm. The design intentionally avoids unnecessary elements, allowing key actions like contacting or requesting services to remain highly visible.",
-    "images": ["images/projects/handydmd/h_3.png","images/projects/handydmd/h_2.png",
-      "images/projects/handydmd/h_4.png"]
-  },
-
-  "impact": {
-    "text": "The final result is a more focused and reliable user experience that improves how services are understood and how users interact with the site. By reducing visual noise and reinforcing clear pathways, the design supports faster decision-making and builds trust through consistency and clarity.",
-    "images": [
-      "images/projects/handydmd/h_1.png"
-    
-    ]
-  },
-
-  "technologies": ["WordPress"],
-  "roles": [
-    "Brand Identity",
-    "UI Design",
-    "Content Structuring",
-    "WordPress Customization",
-    "Responsive Design"
-  ],
-  "features": [],
-  "images": [
-    "images/projects/handydmd/h_0d.png",
-    "images/projects/handydmd/h_0m.png"
-  ],
-  "live": "https://handydmd.com/",
-  "github": "",
-  "more": "projects.html"
-},
-
-    {
-      "id": "aurora",
-      "title": "Aurora Wellness Center",
-      "subtitle": "WordPress",
-      "category": "WordPress",
-      "cardStack": "WordPress • Branding • UI • Custom CSS",
-      "year": "2025",
-      "featured": true,
-      "summary": "Wellness website case study focused on visual consistency, calm interaction, and brand alignment.",
-
-      "description": {
-        "text": "This project is a conceptual wellness website developed as part of a design course. The goal was to approach it as a real-world scenario, creating a complete brand and web experience from scratch rather than redesigning an existing product. Every decision was made with the intention of building a calm, cohesive, and visually aligned digital environment that reflects the values of a wellness brand.",
-        "images": [   "images/projects/aurora/a_0d.png",
-        "images/projects/aurora/a_0m.png"]
-      },
-      "challenge": {
-        "text": "Since this project was built from the ground up, the main challenge was defining a clear visual direction without relying on an existing structure. The design needed to communicate calmness, clarity, and trust while organizing different types of content in a way that felt intuitive and balanced. The focus was not only on aesthetics, but on how layout, spacing, and hierarchy could support a more relaxing and understandable user experience.",
-        "images": ["images/projects/aurora/a_1.png"]
-      },
-      "solution": {
-        "text": "The solution focused on creating a structured layout system that could guide the user naturally through the content. A consistent use of spacing, typography, and color helped reinforce a calm visual rhythm across sections. Each element was intentionally simplified to avoid visual noise, allowing the content to feel more approachable while maintaining a strong and cohesive brand identity.",
-        "images": ["images/projects/aurora/a_2.png"]
-      },
-      "impact": {
-        "text": "The final result demonstrates how a clear design system can create a cohesive and intentional experience from the ground up. The project highlights decision-making focused on user perception, readability, and emotional tone, showing how design choices can support both brand identity and usability in a wellness-focused environment.",
-        "images": [
-          "images/projects/aurora/a_3.png"
-        ]
-      },
-
-      "technologies": [
-  "WordPress",
-  "Adobe Illustrator",
-  "Custom CSS"
-],
-      "roles": [
-        "Brand Identity",
-        "UI Design",
-        "Content Structuring",
-        "WordPress Customization",
-        "Responsive Design"
-      ],
-      "features": [],
-      "images": [
-        "images/projects/aurora/a_0d.png",
-        "images/projects/aurora/a_0m.png"
-      ],
-      "live": "https://folio.gatangdesigns.io/",
-      "github": "",
-      "more": "projects.html"
-    },
 
     {
       "id": "hiraldowoodresin",
@@ -313,13 +151,231 @@
     },
 
     {
+  "id": "handydmd",
+  "title": "Handyman DMD",
+  "subtitle": "WordPress",
+  "category": "WordPress",
+  "cardStack": "WordPress • Branding • UI • Custom CSS",
+  "year": "2025",
+  "featured": true,
+  "summary": "Service-based website focused on clarity, trust, and fast access to key actions.",
+
+  "description": {
+    "text": "This project focuses on translating a hands-on service business into a clear and trustworthy digital experience. The goal was to remove friction from the user journey by prioritizing immediate understanding of services and direct access to contact actions. Every design decision supports clarity over decoration, ensuring users can quickly recognize what is offered and how to take the next step.",
+    "images": [
+      "images/projects/handydmd/h_0d.png",
+      "images/projects/handydmd/h_0m.png"
+    ]
+  },
+
+"challenge": {
+  "text": "The business offers multiple services, which can easily overwhelm users if not structured carefully. The challenge was to present all information clearly while maintaining a sense of simplicity and trust.\n\nTo approach this, early layout sketches were used to explore how services, navigation, and call-to-action elements should be organized. This step helped define a clear hierarchy before moving into the final interface, ensuring that information would guide the user instead of competing for attention.",
+  "images": ["images/projects/handydmd/h_5.png"]
+},
+
+  "solution": {
+    "text": "The solution focuses on structured simplicity. Content was grouped into clear service categories, supported by a consistent visual hierarchy that directs attention from overview to action. Navigation was simplified to reduce cognitive load, while custom CSS adjustments refined spacing, typography, and visual rhythm. The design intentionally avoids unnecessary elements, allowing key actions like contacting or requesting services to remain highly visible.",
+    "images": ["images/projects/handydmd/h_3.png","images/projects/handydmd/h_2.png",
+      "images/projects/handydmd/h_4.png"]
+  },
+
+  "impact": {
+    "text": "The final result is a more focused and reliable user experience that improves how services are understood and how users interact with the site. By reducing visual noise and reinforcing clear pathways, the design supports faster decision-making and builds trust through consistency and clarity.",
+    "images": [
+      "images/projects/handydmd/h_1.png"
+    
+    ]
+  },
+
+  "technologies": ["WordPress"],
+  "roles": [
+    "Brand Identity",
+    "UI Design",
+    "Content Structuring",
+    "WordPress Customization",
+    "Responsive Design"
+  ],
+  "features": [],
+  "images": [
+    "images/projects/handydmd/h_0d.png",
+    "images/projects/handydmd/h_0m.png"
+  ],
+  "live": "https://handydmd.com/",
+  "github": "",
+  "more": "projects.html"
+},
+
+     
+
+    {
+      "id": "jgphoto",
+      "title": "J&G Photography",
+      "subtitle": "Coded",
+      "category": "Custom Code",
+      "cardStack": "HTML • CSS • JavaScript",
+      "year": "2025",
+      "featured": true,
+      "summary": "Custom-coded photography website focused on service presentation, gallery structure, and user flow.",
+
+      "description": {
+        "text": "This project is a custom-coded website for a photography business. The goal was to create a structure that prioritizes clarity without losing the emotional impact of the imagery. The design focuses on guiding the user through services, galleries, and booking options in a way that feels natural rather than overwhelming.",
+        "images": ["images/projects/jgphoto/jg_8.png"]
+      },
+      "challenge": {
+        "text": "The main challenge was organizing multiple photography services while maintaining a calm and visually driven experience. Photography websites often rely heavily on imagery, which can easily disrupt navigation and hierarchy. The goal was to balance strong visual content with clear structure, ensuring users could explore without feeling lost and always have a clear path toward booking or contact.",
+        "images": ["images/projects/jgphoto/jg_1.png","images/projects/jgphoto/jg_10.png"]
+      },
+      "solution": {
+       "text": "The layout was designed to guide the user progressively rather than presenting everything at once. Services are introduced as visual entry points, allowing users to choose based on context instead of reading long descriptions. A masonry-style gallery was implemented to accommodate different image proportions. Instead of forcing consistency through cropping, the layout preserves the integrity of each photograph, creating a more organic visual rhythm. The package customization system was structured to reduce cognitive load by revealing options only after a selection is made. This prevents users from mixing choices across packages and keeps the decision process focused and controlled.",
+        "images": [ "images/projects/jgphoto/jg_5.png",
+        "images/projects/jgphoto/jg_6.png",
+        "images/projects/jgphoto/jg_7.png"]
+      },
+      "impact": {
+        "text": "The final result provides a structured and intuitive experience that supports both exploration and decision-making. Users can quickly understand the type of services offered, engage with the photography style, and move toward booking without unnecessary friction. The design reinforces trust by keeping the experience simple, guided, and visually consistent.",
+        "images": [
+          "images/projects/jgphoto/jg_9.png"         
+        ]
+      },
+
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "FormSubmit",
+        "Vercel"
+      ],
+      "roles": [
+        "UI Design",
+        "Front-End Development",
+        "Content Structuring",
+        "Responsive Design"
+      ],
+      "features": [],
+      "images": [
+        "images/projects/jgphoto/jg_0p.png",
+        "images/projects/jgphoto/jg_0m.png"
+      ],
+      "github": "https://github.com/gatang17/JGStudio/",
+      "live": "https://jgstudio.vercel.app",
+      "more": "projects.html"
+    },
+
+    {
+      "id": "jlprezc",
+      "title": "JLPrezc Portfolio",
+      "subtitle": "Coded",
+      "category": "Custom Code",
+      "cardStack": "HTML • CSS • JS",
+      "year": "2025",
+      "featured": true,
+      "summary": "Dark photography portfolio designed to keep the focus on image presentation.",
+
+      
+        "description": {
+          "text": "This project explores how to present a large body of photography without overwhelming the viewer. The primary decision was to reduce visual noise and let the images carry the experience. A dark interface was not only a stylistic choice, but a functional one, used to control contrast, guide attention, and create a consistent viewing environment across different image types.",
+          "images": ["images/projects/jlprezc/jlperezc_1.png"]
+        },
+      
+        "challenge": {
+          "text": "The main challenge was not just the number of images, but how they are perceived when presented together. Large image sets can quickly become visually chaotic if hierarchy is not controlled. The problem became defining how much content to show at once, how to group images meaningfully, and how to maintain focus without restricting exploration.",
+          "images": [
+            "images/projects/jlprezc/jlperezc_2.png",
+                       "images/projects/jlprezc/jlperezc_7.png",
+            "images/projects/jlprezc/jlperezc_4.png"
+          ]
+        },
+      
+        "solution": {
+          "text": "The gallery was designed as a controlled system rather than a simple grid. Instead of displaying all images at once, the layout limits initial exposure and allows expansion when needed. This reduces cognitive load while still supporting a large volume of content. The masonry-style arrangement preserves the natural proportions of the images, avoiding forced cropping and maintaining visual integrity. Interaction patterns such as overlays and progressive reveal were used to give users control without adding visual clutter.",
+          "images": [ "images/projects/jlprezc/jlperezc_5.png"]
+        },
+      
+        "impact": {
+          "text": "The final result is a gallery experience that feels organized without being rigid. Images remain the primary focus while the system behind them provides structure and flow. The design supports both quick browsing and deeper exploration, reflecting a balance between visual impact and usability.",
+          "images": ["images/projects/jlprezc/jlperezc_6.png"]
+        }
+      
+      ,
+
+      "technologies": [],
+      "roles": [
+        "UI Design",
+        "Front-End Development",
+        "Content Structuring",
+        "Responsive Design"
+      ],
+      "features": [],
+      "images": [
+        "images/projects/jlprezc/jlperezc_0d.png",
+        "images/projects/jlprezc/jlperezc_0m.png"
+      ],
+      "github": "https://github.com/gatang17/jlperezc.git",
+      "live": "https://jlperezc.vercel.app/",
+      "more": "projects.html"
+    },
+
+    {
+      "id": "aurora",
+      "title": "Aurora Wellness Center",
+      "subtitle": "WordPress",
+      "category": "WordPress",
+      "cardStack": "WordPress • Branding • UI • Custom CSS",
+      "year": "2025",
+      "featured": false,
+      "summary": "Wellness website case study focused on visual consistency, calm interaction, and brand alignment.",
+
+      "description": {
+        "text": "This project is a conceptual wellness website developed as part of a design course. The goal was to approach it as a real-world scenario, creating a complete brand and web experience from scratch rather than redesigning an existing product. Every decision was made with the intention of building a calm, cohesive, and visually aligned digital environment that reflects the values of a wellness brand.",
+        "images": [   "images/projects/aurora/a_0d.png",
+        "images/projects/aurora/a_0m.png"]
+      },
+      "challenge": {
+        "text": "Since this project was built from the ground up, the main challenge was defining a clear visual direction without relying on an existing structure. The design needed to communicate calmness, clarity, and trust while organizing different types of content in a way that felt intuitive and balanced. The focus was not only on aesthetics, but on how layout, spacing, and hierarchy could support a more relaxing and understandable user experience.",
+        "images": ["images/projects/aurora/a_1.png"]
+      },
+      "solution": {
+        "text": "The solution focused on creating a structured layout system that could guide the user naturally through the content. A consistent use of spacing, typography, and color helped reinforce a calm visual rhythm across sections. Each element was intentionally simplified to avoid visual noise, allowing the content to feel more approachable while maintaining a strong and cohesive brand identity.",
+        "images": ["images/projects/aurora/a_2.png"]
+      },
+      "impact": {
+        "text": "The final result demonstrates how a clear design system can create a cohesive and intentional experience from the ground up. The project highlights decision-making focused on user perception, readability, and emotional tone, showing how design choices can support both brand identity and usability in a wellness-focused environment.",
+        "images": [
+          "images/projects/aurora/a_3.png"
+        ]
+      },
+
+      "technologies": [
+  "WordPress",
+  "Adobe Illustrator",
+  "Custom CSS"
+],
+      "roles": [
+        "Brand Identity",
+        "UI Design",
+        "Content Structuring",
+        "WordPress Customization",
+        "Responsive Design"
+      ],
+      "features": [],
+      "images": [
+        "images/projects/aurora/a_0d.png",
+        "images/projects/aurora/a_0m.png"
+      ],
+      "live": "https://folio.gatangdesigns.io/",
+      "github": "",
+      "more": "projects.html"
+    },
+
+    {
       "id": "quillpp",
       "title": "Quill Pen Press",
       "subtitle": "Webflow",
       "category": "Webflow",
       "cardStack": "Webflow • Branding • UI",
       "year": "2025",
-      "featured": true,
+      "featured": false,
       "summary": "Publishing platform concept focused on structure, readability, and brand credibility.",
 
       "description": {
@@ -369,59 +425,7 @@
       "more": "projects.html"
     },
 
-    {
-      "id": "jlprezc",
-      "title": "JLPrezc Portfolio",
-      "subtitle": "Coded",
-      "category": "Client Project",
-      "cardStack": "HTML • CSS • JS",
-      "year": "2025",
-      "featured": false,
-      "summary": "Dark photography portfolio designed to keep the focus on image presentation.",
-
-      
-        "description": {
-          "text": "This project explores how to present a large body of photography without overwhelming the viewer. The primary decision was to reduce visual noise and let the images carry the experience. A dark interface was not only a stylistic choice, but a functional one, used to control contrast, guide attention, and create a consistent viewing environment across different image types.",
-          "images": ["images/projects/jlprezc/jlperezc_1.png"]
-        },
-      
-        "challenge": {
-          "text": "The main challenge was not just the number of images, but how they are perceived when presented together. Large image sets can quickly become visually chaotic if hierarchy is not controlled. The problem became defining how much content to show at once, how to group images meaningfully, and how to maintain focus without restricting exploration.",
-          "images": [
-            "images/projects/jlprezc/jlperezc_2.png",
-                       "images/projects/jlprezc/jlperezc_7.png",
-            "images/projects/jlprezc/jlperezc_4.png"
-          ]
-        },
-      
-        "solution": {
-          "text": "The gallery was designed as a controlled system rather than a simple grid. Instead of displaying all images at once, the layout limits initial exposure and allows expansion when needed. This reduces cognitive load while still supporting a large volume of content. The masonry-style arrangement preserves the natural proportions of the images, avoiding forced cropping and maintaining visual integrity. Interaction patterns such as overlays and progressive reveal were used to give users control without adding visual clutter.",
-          "images": [ "images/projects/jlprezc/jlperezc_5.png"]
-        },
-      
-        "impact": {
-          "text": "The final result is a gallery experience that feels organized without being rigid. Images remain the primary focus while the system behind them provides structure and flow. The design supports both quick browsing and deeper exploration, reflecting a balance between visual impact and usability.",
-          "images": ["images/projects/jlprezc/jlperezc_6.png"]
-        }
-      
-      ,
-
-      "technologies": [],
-      "roles": [
-        "UI Design",
-        "Front-End Development",
-        "Content Structuring",
-        "Responsive Design"
-      ],
-      "features": [],
-      "images": [
-        "images/projects/jlprezc/jlperezc_0d.png",
-        "images/projects/jlprezc/jlperezc_0m.png"
-      ],
-      "github": "https://github.com/gatang17/jlperezc.git",
-      "live": "https://jlperezc.vercel.app/",
-      "more": "projects.html"
-    },
+   
 
     {
       "id": "juicysplash",
@@ -475,7 +479,7 @@
       "category": "Brand Identity",
       "cardStack": "Figma",
       "year": "2026",
-      "featured": true,
+      "featured": false,
       "summary": "Conceptual personal creative studio identity combining editorial layouts, industrial-inspired typography, and strategic visual storytelling.",
     
       "description": {

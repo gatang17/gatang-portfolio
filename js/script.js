@@ -447,7 +447,7 @@ function renderFeaturedProjects(data) {
   const grid = document.getElementById('projects-grid');
   if (!grid) return;
 
-  const featuredProjects = data.projects.filter((project) => project.featured !== false).slice(0, 4);
+  const featuredProjects = data.projects.filter((project) => project.featured !== false).slice(0, 6);
   const isMobile = window.matchMedia('(max-width: 863px)').matches;
 
   grid.innerHTML = featuredProjects

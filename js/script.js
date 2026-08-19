@@ -1199,17 +1199,31 @@ async function initApp() {
     'Let’s bring your vision to life.'
   ]);
 
-  try {
-    const data = await fetchJSON('./data/projects.json');
-    await initProjects(data);
-    initDesignerNotes(data);
-    initResume(data);
-    initAboutMe(data);
-    initSkills(data);
-  } catch (error) {
-    console.error('App initialization data error:', error);
-  }
+  
+
+
+try {
+  const data = await fetchJSON('./data/projects.json');
+  await initProjects(data);
+  initDesignerNotes(data);
+  initResume(data);
+  initAboutMe(data);
+  initSkills(data);
+} catch (error) {
+  console.error('App initialization data error:', error);
 }
+}
+
+// =============================
+// EASTER EGG FOR CURIOUS DEVELOPERS 👀
+// =============================
+console.log(
+"%c👋 Hey there, curious developer!",
+"font-size: 18px; font-weight: bold; color: #cc4433;"
+);
+console.log(
+"If you're poking around in the console, you probably appreciate good code as much as good design. I'm Gretel — I build sites like this one from scratch, no templates. Let's talk: gretelalvareztang@gmail.com"
+);
 
 document.addEventListener('DOMContentLoaded', initApp);
 

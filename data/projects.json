@@ -92,6 +92,87 @@
   "projects": [
 
     {
+      "id": "inventrack",
+      "title": "InvenTrack",
+      "subtitle": "Web Application",
+      "category": "Web Application",
+      "cardStack": "An inventory management application designed to bring printer monitoring, supplies, equipment, consumables, sales, loans, maintenance, locations, and reporting into one connected operational system.",
+      "year": "2026",
+      "featured": true,
+    
+      "summary": "A multi-module inventory management application that I have been developing iteratively using Base44. I used the platform's AI-assisted building capabilities to turn a complex set of inventory requirements into a functional system with connected modules, operational workflows, reporting, mobile behavior, and a dashboard focused on actionable information.",
+    
+      "description": {
+        "text": "InvenTrack started as an inventory-management concept and gradually expanded as I identified more relationships and operational needs. I defined how the different areas of the system should work together, including Printer Models, individual Printer Units, ink and replacement supplies, Consumables, Equipment, Tablets, Locations, Sales, Loans, maintenance, and reporting. Rather than treating every area as an isolated inventory table, I worked on creating clear responsibilities and relationships between them so the application could function as one connected system.",
+        "images": [
+          "images/projects/inventrack/it_0d.png"
+        ]
+      },
+    
+      "challenge": {
+        "text": "The biggest challenge was managing the growing complexity of the application without allowing the same information to become duplicated across multiple modules. As the project evolved, I had to decide what information belonged to reference data, what staff needed for daily operations, what should exist only as transaction history, and what should appear only in reports. For example, Printer Models define the supplies a model uses, while Printer Units represent the individual physical printers and their current supply conditions. Tablets remain individual inventory records while Loans store borrowing transactions over time. Sales reference existing Consumables instead of creating a separate sales inventory. I also had to continually reorganize the navigation and dashboard as the number of entities and workflows increased.",
+        "images": [
+          "images/projects/inventrack/it_1.png"
+        ]
+      },
+    
+      "solution": {
+        "text": "I used Base44 as the implementation platform and worked through the application in iterative rounds, defining requirements, testing the resulting behavior, identifying problems, and refining the system. I reorganized the information architecture into operational modules, reports, and setup/reference data; defined relationships between inventory records and transactions; established status and alert logic; and redesigned the Today dashboard around the principle of summary, problem, and action. I also specified workflows for printer supply monitoring, replacement-stock availability, consumable sales, tablet lending and returns, equipment maintenance, location tracking, filtering, search, reporting, and responsive mobile use. Because I worked primarily within Base44's available AI credits, features often had to be prioritized and grouped carefully before each implementation round.",
+        "images": [
+          "images/projects/inventrack/it_2.png"
+        ]
+      },
+    
+      "impact": {
+        "text": "The result is a functional application with multiple connected entities instead of a collection of disconnected inventory tables. Staff can identify printers requiring attention, compare installed supply needs with replacement stock, manage consumables and equipment, record sales, track tablet loans and returns, monitor maintenance, search inventory, and access detailed reports from the same system. For me, the project became an extended exercise in product thinking: taking a broad operational problem, breaking it into manageable systems, defining how those systems should communicate, testing the experience, and continuously refining it as new requirements emerged.",
+        "images": [
+          "images/projects/inventrack/it_3.png"
+        ]
+      },
+    
+      "technologies": [
+        "Base44"
+      ],
+    
+      "roles": [
+        "Product Design",
+        "UI/UX Design",
+        "Information Architecture",
+        "Workflow Design",
+        "Data Structure Planning",
+        "Responsive Design",
+        "Usability Testing",
+        "AI-Assisted Implementation"
+      ],
+    
+      "features": [
+        "Operational dashboard focused on urgent issues and quick actions",
+        "Printer Models connected to individual physical Printer Units",
+        "Structured printer ink, toner, and supply-level monitoring",
+        "Replacement supply inventory connected to printer needs",
+        "Consumable inventory with sales and automatic stock updates",
+        "Tablet inventory with loan and return transaction history",
+        "Equipment and maintenance tracking",
+        "Location-based asset organization",
+        "Cross-category inventory and supply reports",
+        "Search, filtering, status indicators, and actionable alerts",
+        "Responsive workflows for desktop and mobile use"
+      ],
+    
+      "images": [
+        "images/projects/inventrack/it_0d.png",
+        "images/projects/inventrack/it_0m.png",
+        "images/projects/inventrack/it_1.png",
+        "images/projects/inventrack/it_2.png",
+        "images/projects/inventrack/it_3.png"
+      ],
+    
+      "live": "https://print-flow-stock.base44.app/",
+      "github": "",
+      "more": "projects.html"
+    },
+
+    {
       "id": "hiraldowoodresin",
       "title": "Hiraldo Wood Resin",
       "subtitle": "WordPress",
@@ -102,8 +183,7 @@
       "summary": "Custom WooCommerce build for a live-edge wood and resin artist, combining a dynamic design library, a multi-step customization form, and a fully custom design system. This is a live client project currently in its final phase, and product photography is pending the client's photographer, so some visuals shown are placeholders for demonstration purposes.",
       "description": {
         "text": "This project is a full e-commerce and custom-commission website for a woodworking and resin artist. Beyond a standard WooCommerce shop, the build includes a dynamic 'Design Library' where customers can select existing sketches and carry that reference directly into a multi-step customization request, plus a fully documented design system covering color, typography, and reusable components.",
-        "images": ["images/projects/hwr/hwr_0d.png", 
-        "images/projects/hwr/hwr_0m.png"]
+        "images": [ "images/projects/hwr/hwr_0d.png"]
       },
       "challenge": {
         "text": "The client's needs evolved significantly mid-project: an initial 'completed work' gallery had to be rebuilt into a 'Design Library' where each sketch links directly into the customization form, carrying the selected design's title and image as context. This required connecting two separate custom post types and forms through URL parameters and JavaScript, while avoiding duplicate script execution across pages that share form field names. A second challenge was styling deeply nested WooCommerce and form plugin markup, which required resolving CSS specificity conflicts against third-party plugin styles rather than relying on simple class overrides.",
@@ -149,7 +229,7 @@
       "github": "",
       "more": "projects.html"
     },
-
+    
     {
   "id": "handydmd",
   "title": "Handyman DMD",
@@ -157,7 +237,7 @@
   "category": "WordPress",
   "cardStack": "WordPress • Branding • UI • Custom CSS",
   "year": "2025",
-  "featured": true,
+  "featured": false,
   "summary": "Service-based website focused on clarity, trust, and fast access to key actions.",
 
   "description": {
@@ -203,9 +283,7 @@
   "live": "https://handydmd.com/",
   "github": "",
   "more": "projects.html"
-},
-
-     
+},    
 
     {
       "id": "jgphoto",
@@ -423,9 +501,7 @@
       "live": "https://quillpenpress.webflow.io",
       "github": "",
       "more": "projects.html"
-    },
-
-   
+    },   
 
     {
       "id": "juicysplash",

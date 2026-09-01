@@ -778,8 +778,6 @@ header {
 ============================= */
 
 #menu_dtk {
-  position: absolute;
-  padding-top: var(--topbar-height);
   top: 0;
   left: 0;
   width: var(--sidebar-width);

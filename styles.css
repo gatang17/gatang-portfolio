@@ -746,7 +746,6 @@ header {
   align-items: center;
   justify-content: left;
   min-height: calc(100vh - var(--topbar-height));
-  margin-left: var(--sidebar-width);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

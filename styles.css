@@ -398,14 +398,41 @@ a:hover,
   color: var(--primary-yellow);
 }
 #header-container {
-
-  max-height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #808080;
+  background: var(--background-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-header {
+
+/* específicamente el header inyectado */
+#header-container > header {
+  width: 100%;
+  min-height: 100px;
+
+  margin: 0; /* elimina el margin negativo de .row */
+  padding: 10px 40px;
+
+  display: flex;
+  align-items: center;
+
+  background: var(--background-color);
+}
+
+/* tamaño estable, NO vh */
+#header-container #img_logoh {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+header { 
   position: sticky;
   top: 0;
   z-index: 100;
   background: var(--background-color);
+  padding: 10px 40px;
 }
 
 #img_logoh {

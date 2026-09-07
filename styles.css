@@ -229,11 +229,6 @@ body.menu-open {
   background-color: rgba(63, 69, 80, 0.25);
 }
 
-.section-intro {
-  max-width: 700px;
-  margin-top: 1.2rem;
-}
-
 .t-border {
   width: min(1440px, 100%);
   max-width: none;
@@ -812,11 +807,45 @@ header {
   margin: 0 auto;
 }
 
+/* ==================================================
+ SHARED SECTION HEADING
+ Title (left)  |  Subtitle (right)
+ Used by: projects, services, process, kind words, contact.
+ Only two text classes: .title and .section-intro
+================================================== */
+
+.section-heading {
+  display: grid;
+  grid-template-columns: 1fr 0.75fr;
+  gap: 4rem;
+  align-items: end;
+  margin-bottom: 4rem;
+}
+
+.section-heading > div {
+  padding-right: 3rem;
+}
+
+.section-heading > div > span {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--primary-yellow);
+}
+
+.section-heading .title {
+  margin: 0;
+  color: inherit;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 0.92;
+}
+
 .section-intro {
   margin: 0;
   max-width: 520px;
   font-size: 1rem;
   line-height: 1.75;
+  color: inherit;
+  opacity: 0.72;
 }
 
 
@@ -829,39 +858,6 @@ header {
   background: var(--background-color);
   color: var(--soft-color);
 }
-
-.services-heading {
-  display: grid;
-  grid-template-columns: 1fr 0.75fr;
-  gap: 4rem;
-  align-items: end;
-  margin-bottom: 4rem;
-}
-
-.services-title-wrap {
-  padding-right: 3rem;
- 
-}
-
-.services-title-wrap > span {
-  display: block;
-  margin-bottom: 1rem;
-  color: var(--primary-yellow);
-}
-
-.services-title-wrap .title {
-  margin: 0;
-  color: var(--soft-color);
-
-  font-size: clamp(3rem, 6vw, 5.5rem);
-  line-height: 0.92;
-}
-
-.services-heading .section-intro {
-  color: var(--soft-color);
-  opacity: 0.72;
-}
-
 
 /* SERVICES CARDS */
 
@@ -965,43 +961,6 @@ header {
   background: var(--soft-color);
   color: var(--background-color);
 }
-
-.process-heading {
-  display: grid;
-  grid-template-columns: 1fr 0.85fr;
-  gap: 5rem;
-  align-items: end;
-
-  margin-bottom: 6rem;
-}
-
-.process-title-wrap {
-  padding-right: 4rem;
-
-}
-
-.process-title-wrap > span {
-  display: block;
-
-  margin-bottom: 1rem;
-
-  color: var(--primary-yellow);
-}
-
-.process-title-wrap .title {
-  margin: 0;
-
-  color: var(--background-color);
-
-  font-size: clamp(3rem, 6vw, 5.5rem);
-  line-height: 0.92;
-}
-
-.process-heading .section-intro {
-  color: var(--background-color);
-  opacity: 0.68;
-}
-
 
 /* PROCESS STEPS */
 
@@ -1112,56 +1071,20 @@ header {
   color: var(--soft-color);
 }
 
-.kind-words-heading {
-  display: grid;
-  grid-template-columns: 1fr 0.7fr;
-  gap: 4rem;
-  align-items: end;
-  margin-bottom: 4rem;
-}
-
-.kind-words-title-wrap {
-  padding-right: 3rem;
- 
-}
-
-.kind-words-title-wrap > span {
-  display: block;
-
-  margin-bottom: 1rem;
-
-  color: var(--primary-yellow);
-}
-
-.kind-words-title-wrap .title {
-  margin: 0;
-  color: var(--soft-color);
-  font-size: clamp(3rem, 6vw, 5.3rem);
-  line-height: 0.95;
-}
-
-.kind-words-heading .section-intro {
-  color: var(--soft-color);
-  opacity: 0.7;
-}
-
-
 /* TESTIMONIALS */
+/* Columns adapt to the available width: no fixed column count.
+   The 1px gap + box-shadow draws the dividers for any number of cards. */
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  border-top: 1px solid rgba(31, 39, 52, 0.25);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 1px;
 }
 
 .testimonial {
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
-  border-bottom: 1px solid rgba(31, 39, 52, 0.25);
-}
-
-.testimonial:last-child {
-  border-right: none;
+  box-shadow: 0 0 0 1px rgba(31, 39, 52, 0.25);
 }
 
 .testimonial-top {
@@ -1220,16 +1143,12 @@ header {
 
   /* HEADINGS */
 
-  .services-heading,
-  .process-heading,
-  .kind-words-heading {
+  .section-heading {
       grid-template-columns: 1fr;
       gap: 1.5rem;
   }
 
-  .services-title-wrap,
-  .process-title-wrap,
-  .kind-words-title-wrap {
+  .section-heading > div {
       padding-right: 0;
       padding-bottom: 1.5rem;
 
@@ -1276,16 +1195,6 @@ header {
   }
 
 
-  /* TESTIMONIALS */
-
-  .testimonials-grid {
-      grid-template-columns: repeat(2, 1fr);
-  }
-
-  .testimonial:nth-child(2) {
-      border-right: none;
-  }
-
 }
 
 
@@ -1308,10 +1217,8 @@ header {
 
   /* TITLES */
 
-  .services-title-wrap .title,
-  .process-title-wrap .title,
-  .kind-words-title-wrap .title {
-      font-size: clamp(2.7rem, 13vw, 4rem);
+  .section-heading .title {
+      font-size: clamp(2.4rem, 11vw, 4rem);
   }
 
 
@@ -1334,10 +1241,6 @@ header {
 
 
   /* PROCESS */
-
-  .process-heading {
-      margin-bottom: 4rem;
-  }
 
   .process-grid {
       grid-template-columns: 1fr;
@@ -1377,18 +1280,6 @@ header {
   }
 
 
-  /* KIND WORDS */
-
-  .testimonials-grid {
-      grid-template-columns: 1fr;
-  }
-
-  .testimonial {
-      padding: 2.5rem 0;
-
-      border-right: none;
-  }
-
 }
 
 
@@ -1408,10 +1299,8 @@ header {
       padding: 4rem 0;
   }
 
-  .services-title-wrap .title,
-  .process-title-wrap .title,
-  .kind-words-title-wrap .title {
-      font-size: clamp(2.4rem, 14vw, 3.5rem);
+  .section-heading .title {
+      font-size: clamp(2rem, 9.5vw, 3.5rem);
   }
 
 }
@@ -1494,11 +1383,6 @@ header {
   transition: opacity 0.3s ease;
 }
 
-/* HOVER (preview) */
-#logo_container:hover .logo-base {
-  opacity: 0;
-}
-
 
 
 .logo-mosaic .line {
@@ -1528,29 +1412,6 @@ header {
   transition: opacity 0.25s ease, transform 0.35s ease;
 }
 
-.logo-mosaic:hover .logo-color {
-  opacity: 1;
-  transform: scale(1.04);
-}
-
-.logo-mosaic:hover .logo-color {
-  opacity: 1;
-  animation: logoStretch 0.35s ease forwards;
-}
-
-@keyframes logoStretch {
-  0% {
-    transform: scaley(1);
-  }
-
-  55% {
-    transform: scale(1.04);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 /*---------links*/
 
 .nav-link {
@@ -2262,14 +2123,18 @@ header {
     grid-template-columns: 1fr;
   }
 }
+/* ---------- DISABLED: SKILLS — section is commented out in index.html ---------- */
 /* =============================
    14. SKILLS SECTION
 ============================= */
+/*
 
 #skills {
   display: grid;
   align-content: flex-start;
+*/
   /*background-color: var(--background-soft);*/
+/*
   background-image: url(/images/projects/personal/backgound-1.png);
   background-position: center;
   background-size: cover;
@@ -2340,10 +2205,13 @@ header {
 .skill.active .skill-inner {
   opacity: 1;
 }
+*/
 
+/* ---------- DISABLED: THINKING — section is commented out in index.html ---------- */
 /* =========================
    THINKING SECTION
 ========================= */
+/*
 
 .thinking-section {
   position: relative;
@@ -2450,7 +2318,9 @@ header {
   transform: translateX(5px);
 }
 
+*/
 /* responsive */
+/*
 @media (max-width: 1000px) {
   .thinking-inner {
     grid-template-columns: 1fr;
@@ -2486,27 +2356,8 @@ header {
 
 
 }
+*/
 
-
-/* =========================
-   SHARED SPLIT SECTION HEAD
-========================= */
-
-.section-split-head {
-  display: grid;
-  gap: 4rem;
-
-}
-.section-split-head {
-  align-items: flex-end;
-}
-
-.section-split-head p {
-  border-left: 2px solid rgba(209, 154, 26, 0.7);
-  padding-left: 1.5rem;
-  max-width: 420px;
-  margin: 0;
-}
 
 .section-title-compact {
   font-size: clamp(3.5rem, 7vw, 6.5rem);
@@ -2516,37 +2367,17 @@ header {
 }
 
 
-/* PROJECTS HEADER ADJUSTMENT */
-
-#projects .section-split-head {
-  padding-bottom: 1rem;
-}
-
-#projects .section-split-head p {
-  color: rgba(242, 230, 217, 0.75);
-}
-
 /* responsive */
 
 @media (max-width: 790px) {
-  .section-split-head {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
   .section-title-compact {
     font-size: clamp(3rem, 15vw, 4.8rem);
   }
-
-  .section-split-head p {
-    border-left: none;
-    border-top: 2px solid rgba(209, 154, 26, 0.7);
-    padding-left: 0;
-    padding-top: 1rem;
-  }
 }
 
+/* ---------- DISABLED: VISUAL NOTES — section is commented out in index.html ---------- */
 /* ========================= VISUAL NOTES SECTION ========================= */
+/*
 .visual-notes-section { 
   background: var(--soft-color); 
   color: var(--background-color); 
@@ -2558,7 +2389,9 @@ header {
   margin: 0 auto; 
 } 
 
+*/
 /* Header Area */
+/*
 .visual-notes-head { 
   padding: 0 5rem 2rem; 
 } 
@@ -2572,7 +2405,9 @@ header {
   line-height: 1.7; 
 } 
 
+*/
 /* Fast, Lightweight Column Masonry */
+/*
 .visual-notes-masonry { 
   column-count: 3;
   column-gap: 1rem;
@@ -2582,10 +2417,14 @@ header {
 } 
 
 .visual-note { 
+*/
   display: inline-block; /* Crucial for column layout wrapping */
+/*
   width: 100%; 
+*/
   margin-bottom: 1rem; /* Controls vertical gap between items */
   break-inside: avoid; /* Prevents an item from splitting across columns */
+/*
   position: relative; 
   overflow: hidden; 
   background: rgba(255, 255, 255, 0.045); 
@@ -2594,16 +2433,22 @@ header {
 
 .visual-note img { 
   width: 100%; 
+*/
   height: auto; /* Respects native aspect ratio without stretching */
+/*
   display: block;
   transition: transform 0.4s ease, opacity 0.4s ease; 
 } 
 
+*/
 /* Hover FX */
+/*
 .visual-note:hover { transform: translateY(-4px); } 
 .visual-note:hover img { transform: scale(1.035); opacity: 0.88; } 
 
+*/
 /* Simplified, Fluid Responsiveness */
+/*
 @media (max-width: 1024px) { 
   .visual-notes-head { padding-inline: 2rem; } 
   .visual-notes-masonry { column-count: 3; padding-inline: 2rem; } 
@@ -2622,6 +2467,7 @@ header {
   .visual-notes-head, .visual-notes-masonry { padding-inline: 1.5rem; } 
   .visual-notes-masonry { column-count: 1; } 
 }
+*/
 
 /* =============================
    15. CONTACT SECTION
@@ -2983,6 +2829,8 @@ h2 .cursor {
 
 
 
+/* ---------- DISABLED: SKILLS (mobile) — section is commented out in index.html ---------- */
+/*
   .skills-grid {
     flex-direction: column;
     width: 100%;
@@ -2997,6 +2845,7 @@ h2 .cursor {
   .skill-overlay span {
     transform: rotate(0deg);
   } 
+*/
 
   .wrap_form {
     flex-direction: column;
@@ -3068,7 +2917,6 @@ h2 .cursor {
 
 @media (max-width: 480px) {
   .t-border,
-  .skills-grid,
   .wrap_form {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -3258,7 +3106,6 @@ body.brand-mode #top_bar a{
 body.brand-mode section,
 body.brand-mode .content,
 body.brand-mode .projects-shell,
-body.brand-mode .skills-grid,
 body.brand-mode .wrap_form,
 body.brand-mode footer {
   background-color: var(--background-color) !important;
@@ -3289,7 +3136,9 @@ body.brand-mode #intro * {
   color: #f2e6d9;
 }
 
+/* ---------- DISABLED: SKILLS (brand-mode) — section is commented out in index.html ---------- */
 /* CONTENEDOR */
+/*
 body.brand-mode #skills {
   background-color: var(--background-color);
   background-blend-mode: soft-light;
@@ -3298,19 +3147,24 @@ body.brand-mode .skills-grid{
   background-color: var(--background-color)!important;
 }
 
+*/
 /* CARDS */
+/*
 body.brand-mode .skill  {
   background-color: transparent;
 
 }
 
+*/
 /* TEXTO */
+/*
 body.brand-mode #skills h1,
 body.brand-mode #skills h2,
 body.brand-mode #skills p,
 body.brand-mode #skills li {
   color: var(--color-font-body);
 }
+*/
 
 /* HEADER EN BRAND MODE */
 body.brand-mode header,

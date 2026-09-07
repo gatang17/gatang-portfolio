@@ -785,5 +785,21 @@
         "Recipient of Jubilee Scholarship"
       ]
     }
-  ]
+  ],
+
+
+    "testimonials": [
+      {
+        "quote": "It has been a pleasure using Gretel's service. She listened to all of my ideas and requests, and gave me advice on how to get better results for my business. I'd give her more than 5 stars. Thank you! I will be contacting her for my upcoming projects.",
+        "name": "JA. Lobaina",
+        "role": "Manager / Handyman DMD"
+      },
+      {
+        "quote": "Gretel is very dedicated to her work. She brings creative ideas, but always with the business goal in mind. She listened to what I needed for my portfolio, and the result reflects my style as a photographer. I recommend her.",
+        "name": "JL. Cespedes",
+        "role": "Manager / J&G Photography"
+      }
+    ]
+ 
+  
 }

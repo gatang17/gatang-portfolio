@@ -1086,6 +1086,42 @@ function initSkills(data) {
   });
 }
 
+
+// =============================
+// TESTIMONIALS
+// =============================
+function initTestimonials(data) {
+  const grid = document.getElementById('testimonials-grid');
+  const section = document.getElementById('kind-words');
+  if (!grid || !section) return;
+
+  const testimonials = data.testimonials ?? [];
+
+  // Si no hay testimonios, ocultamos la sección entera
+  if (testimonials.length === 0) {
+    section.style.display = 'none';
+    return;
+  }
+
+  section.style.display = '';
+
+  grid.innerHTML = testimonials
+    .map((t) => `
+      <article class="testimonial">
+        <div class="testimonial-top">
+          <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+          <span class="text-xs uppercase">Client Feedback</span>
+        </div>
+        <blockquote>${escapeHtml(t.quote)}</blockquote>
+        <footer>
+          <strong class="text-xs uppercase">${escapeHtml(t.name)}</strong>
+          <span>${escapeHtml(t.role)}</span>
+        </footer>
+      </article>
+    `)
+    .join('');
+}
+
 // =============================
 // CONTACT POPUP
 // =============================
@@ -1200,8 +1236,6 @@ async function initApp() {
   ]);
 
   
-
-
 try {
   const data = await fetchJSON('./data/projects.json');
   await initProjects(data);
@@ -1212,6 +1246,14 @@ try {
 } catch (error) {
   console.error('App initialization data error:', error);
 }
+
+try {
+  const testimonialsData = await fetchJSON('./data/projects.json');
+  initTestimonials(testimonialsData);
+} catch (error) {
+  console.error('Testimonials data error:', error);
+}
+
 }
 
 // =============================

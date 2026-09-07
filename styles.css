@@ -836,7 +836,15 @@ header {
   margin: 0;
   color: inherit;
   font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 600;
   line-height: 0.92;
+  text-transform: none;
+}
+
+/* Secondary pages (projects, resume, about): the hero band already has
+   its own padding, so the heading does not add extra space below. */
+.secondary-hero .section-heading {
+  margin-bottom: 0;
 }
 
 .section-intro {
@@ -1744,24 +1752,6 @@ header {
   background-position: center;
   background-size: cover;
 
-}
-
-.resume-hero h1 {
-  
-  margin-top: 0.35rem;
-  font-size: clamp(3.2rem, 8vw, 6.5rem);
-  line-height: 0.95;
-  text-transform: uppercase;
-  color: var(--soft-color);
-}
-
-.resume-summary {
-  max-width: 760px;
-  margin: 1.2rem 0 0;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: rgba(39, 44, 53, 0.78);
-  
 }
 
 .resume-intro-block {
@@ -2738,10 +2728,6 @@ h2 .cursor {
 }
 
 @media (max-width: 480px) {
-  .resume-summary {
-    font-size: 1rem;
-  }
-
   .resume-download {
     width: 100%;
     justify-content: center;

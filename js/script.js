@@ -1058,7 +1058,8 @@ function initAboutMe(data) {
 }
 
 
-function initSkills(data) {
+// DISABLED: the #skills section is commented out in index.html.
+/* function initSkills(data) {
   const skills = document.querySelectorAll('.skill');
   if (!skills.length) return;
 
@@ -1084,7 +1085,7 @@ function initSkills(data) {
       skillEl.classList.toggle('active');
     });
   });
-}
+} */
 
 
 // =============================
@@ -1242,18 +1243,11 @@ try {
   initDesignerNotes(data);
   initResume(data);
   initAboutMe(data);
-  initSkills(data);
+  // initSkills(data); // DISABLED: #skills section is commented out in index.html
+  initTestimonials(data);
 } catch (error) {
   console.error('App initialization data error:', error);
 }
-
-try {
-  const testimonialsData = await fetchJSON('./data/projects.json');
-  initTestimonials(testimonialsData);
-} catch (error) {
-  console.error('Testimonials data error:', error);
-}
-
 }
 
 // =============================
@@ -1268,5 +1262,3 @@ console.log(
 );
 
 document.addEventListener('DOMContentLoaded', initApp);
-
-

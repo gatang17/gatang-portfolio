@@ -4,15 +4,26 @@
     <meta charset="UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <meta name="google-site-verification" content="RTpMOP6rSgO3T47Cy-ySAzgArwTyP1rlOGrGDDT1LrA" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BYEHMP81Y0"></script>
-  <script>
+  <!-- Google tag (gtag.js) — only on the published site, not local/dev -->
+<script>
+  (function () {
+    var host = location.hostname;
+    var isLocal = location.protocol === 'file:' || host === '' || host === 'localhost' ||
+      host === '127.0.0.1' || host === '[::1]' || host.endsWith('.local') ||
+      /^(10|192\.168|172\.(1[6-9]|2\d|3[01]))\./.test(host);
+    if (isLocal) return;
+
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-BYEHMP81Y0';
+    document.head.appendChild(s);
+
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    window.gtag = function () { dataLayer.push(arguments); };
     gtag('js', new Date());
-  
     gtag('config', 'G-BYEHMP81Y0');
-  </script>
+  })();
+</script>
   
     <title>Gretel Alvarez Tang - Graphic Designer Portfolio</title>
    
@@ -44,36 +55,35 @@
   
 
   <body class="secondary-page projects-page-body">
-    <div id="top_bar" class="py-2.5 px-6">
-      <a href="d_notes.html" class="m_text d-flex max-w-7xl text-xs mx-auto flex items-center gap-4 justify-center link_note" id="link_note">
-        designer notes
-      </a>
-    </div>
+  
         <div id="header-container"></div>
 
     <nav id="breadcrumb" class="breadcrumb-nav"></nav>
-    <main class="content secondary-main projects-page-main">
-
     
-
-      <section class="secondary-hero" data-aos="fade-up">
-        <span class="text-xs uppercase">Portfolio Archive</span>
-        <h1>All Projects</h1>
-        <p class="secondary-hero-copy">
-          A broader view of selected work across branding, redesign, WordPress, Webflow, and custom-coded interfaces.
-        </p>
-        
-      </section>
-      <div class="secondary-divider py-5"></div>
-      <section class="projects-hero">
-        
-        <!-- JS injecta el primer proyecto aquí -->
-      </section>
-      
-      <section class="projects-archive" data-aos="fade-up">
-        <div id="projects-listing" class="projects-archive-grid"></div>
-      </section>
-    </main>
+7 projects page · HTML
+<!-- projects.html — replace everything inside <main> ... </main> with this.
+     The rest of the file (head, header, footer, scripts) stays the same. -->
+<main class="content secondary-main projects-page-main">
+ 
+  <section class="secondary-hero" data-aos="fade-up">
+    <span class="text-xs uppercase">Portfolio Archive</span>
+    <h1>All Projects</h1>
+    <p class="secondary-hero-copy">
+      Client work, internship projects and concepts across WordPress,
+      Webflow, custom code and product design.
+    </p>
+  </section>
+ 
+  <!-- Newest project, big (filled by renderProjectsArchive) -->
+  <section class="projects-hero" data-aos="fade-up"></section>
+ 
+  <!-- The rest, in a two-column grid -->
+  <section class="projects-archive">
+    <p class="archive-label">More projects</p>
+    <div id="projects-listing" class="archive-grid"></div>
+  </section>
+ 
+</main>
 
     <div id="footer-container"></div>
 

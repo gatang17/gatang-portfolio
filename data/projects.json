@@ -4,7 +4,6 @@
       "id": "dnotes",
       "title": "Designer Notes",
       "description": "This portfolio was designed to balance contemporary web presentation with subtle references to early web aesthetics, using structure, typography, and interaction to guide the user experience.",
-
       "design": {
         "direction": [
           "Editorial layout",
@@ -12,9 +11,10 @@
           "Subtle nostalgic references",
           "Handcrafted digital feel"
         ],
-
-        "typography": ["Bricolage Grotesque", "Geist"],
-
+        "typography": [
+          "Bricolage Grotesque",
+          "Geist"
+        ],
         "colors": [
           {
             "name": "Background",
@@ -30,7 +30,6 @@
           }
         ]
       },
-
       "process": {
         "intent": "The project explores how structure, hierarchy, and interaction design can shape user perception. By combining a vertical navigation system with minimal motion and editorial layout principles, the goal was to create an experience that feels both structured and interactive without overwhelming the user.",
         "decisions": [
@@ -41,7 +40,6 @@
           "Interactive elements were introduced selectively to add personality without disrupting usability."
         ]
       },
-
       "technologies": [
         "HTML",
         "CSS",
@@ -49,7 +47,6 @@
         "Animation Library",
         "Lightbox"
       ],
-
       "gallery": [
         {
           "image": "sketches/foliov1.png",
@@ -84,120 +81,238 @@
           "description": "The 404 page extends the visual system into edge cases. Motion and subtle visual changes were used to reduce friction and transform a potential dead-end into a more engaging moment."
         }
       ],
-
       "github": "https://github.com/gatang17/gatang-portfolio.git"
     }
   ],
-
   "projects": [
-
     {
-      "id": "inventrack",
-      "title": "InvenTrack",
-      "subtitle": "Web Application",
-      "category": "Web Application",
-      "cardStack": "An inventory management application designed to bring printer monitoring, supplies, equipment, consumables, sales, loans, maintenance, locations, and reporting into one connected operational system.",
+      "id": "uncleboojies",
+      "title": "Uncle Boojie's",
+      "subtitle": "Divi",
+      "category": "WordPress",
+      "client": "Uncle Boojie's",
+      "headline": "Four pages, four ways to make content easier to read",
+      "tagline": "I designed four pages for Uncle Boojie's website, each with a different kind of content, from an editorial page and a long blog post to an eleven-chapter document and the Experience page.",
+      "role": "Web Design Intern",
+      "scope": "Page design · UX · Build",
+      "cardStack": "WordPress • Divi • Custom CSS",
       "year": "2026",
       "featured": true,
-    
-      "summary": "A multi-module inventory management application that I have been developing iteratively using Base44. I used the platform's AI-assisted building capabilities to turn a complex set of inventory requirements into a functional system with connected modules, operational workflows, reporting, mobile behavior, and a dashboard focused on actionable information.",
-    
+      "lead": true,
+      "summary": "Website work for Uncle Boojie's, a Kentucky business that offers bourbon tastings, a brunch with Highland cows and a series of signature experiences. Four pages designed in Divi during my internship at Andrew Kung Group, each with its own content and its own design decisions.",
       "description": {
-        "text": "InvenTrack started as an inventory-management concept and gradually expanded as I identified more relationships and operational needs. I defined how the different areas of the system should work together, including Printer Models, individual Printer Units, ink and replacement supplies, Consumables, Equipment, Tablets, Locations, Sales, Loans, maintenance, and reporting. Rather than treating every area as an isolated inventory table, I worked on creating clear responsibilities and relationships between them so the application could function as one connected system.",
+        "text": "During my internship at Andrew Kung Group, I designed four pages for Uncle Boojie's website. Each one had a different kind of content: an editorial page, a long blog post, a long-form document with eleven chapters, and the Experience page. Each one needed its own answer to the same question: how do I make this content easier to read, follow and act on?",
         "images": [
-          "images/projects/inventrack/it_0d.png"
+          "images/projects/uncleboojies/ub_0d.png"
         ]
       },
-    
-      "challenge": {
-        "text": "The biggest challenge was managing the growing complexity of the application without allowing the same information to become duplicated across multiple modules. As the project evolved, I had to decide what information belonged to reference data, what staff needed for daily operations, what should exist only as transaction history, and what should appear only in reports. For example, Printer Models define the supplies a model uses, while Printer Units represent the individual physical printers and their current supply conditions. Tablets remain individual inventory records while Loans store borrowing transactions over time. Sales reference existing Consumables instead of creating a separate sales inventory. I also had to continually reorganize the navigation and dashboard as the number of entities and workflows increased.",
-        "images": [
-          "images/projects/inventrack/it_1.png"
-        ]
-      },
-    
-      "solution": {
-        "text": "I used Base44 as the implementation platform and worked through the application in iterative rounds, defining requirements, testing the resulting behavior, identifying problems, and refining the system. I reorganized the information architecture into operational modules, reports, and setup/reference data; defined relationships between inventory records and transactions; established status and alert logic; and redesigned the Today dashboard around the principle of summary, problem, and action. I also specified workflows for printer supply monitoring, replacement-stock availability, consumable sales, tablet lending and returns, equipment maintenance, location tracking, filtering, search, reporting, and responsive mobile use. Because I worked primarily within Base44's available AI credits, features often had to be prioritized and grouped carefully before each implementation round.",
-        "images": [
-          "images/projects/inventrack/it_2.png"
-        ]
-      },
-    
       "impact": {
-        "text": "The result is a functional application with multiple connected entities instead of a collection of disconnected inventory tables. Staff can identify printers requiring attention, compare installed supply needs with replacement stock, manage consumables and equipment, record sales, track tablet loans and returns, monitor maintenance, search inventory, and access detailed reports from the same system. For me, the project became an extended exercise in product thinking: taking a broad operational problem, breaking it into manageable systems, defining how those systems should communicate, testing the experience, and continuously refining it as new requirements emerged.",
-        "images": [
-          "images/projects/inventrack/it_3.png"
-        ]
+        "text": "Across the four pages, the content became easier to scan, follow and act on, with one consistent visual system across desktop, tablet and mobile. For me, the project was real practice in working inside an existing site and within a client's rules: using only the client's existing text, documenting every decision, and presenting versions for approval before building the final one.",
+        "images": []
       },
-    
       "technologies": [
-        "Base44"
+        "WordPress",
+        "Divi",
+        "Custom CSS",
+        "JavaScript",
+        "Excalidraw"
       ],
-    
       "roles": [
-        "Product Design",
-        "UI/UX Design",
-        "Information Architecture",
-        "Workflow Design",
-        "Data Structure Planning",
+        "UX Design",
+        "UI Design",
         "Responsive Design",
-        "Usability Testing",
-        "AI-Assisted Implementation"
+        "Divi Implementation",
+        "Design Documentation"
       ],
-    
       "features": [
-        "Operational dashboard focused on urgent issues and quick actions",
-        "Printer Models connected to individual physical Printer Units",
-        "Structured printer ink, toner, and supply-level monitoring",
-        "Replacement supply inventory connected to printer needs",
-        "Consumable inventory with sales and automatic stock updates",
-        "Tablet inventory with loan and return transaction history",
-        "Equipment and maintenance tracking",
-        "Location-based asset organization",
-        "Cross-category inventory and supply reports",
-        "Search, filtering, status indicators, and actionable alerts",
-        "Responsive workflows for desktop and mobile use"
+        "Magazine-style editorial layout with captioned images",
+        "Chart and highlighted phrases for a long blog post",
+        "Side menu and accordion for an eleven-chapter document",
+        "Card system and pre-filled request form for the Experience page",
+        "Consistent button system across pages"
       ],
-    
       "images": [
-        "images/projects/inventrack/it_0d.png",
-        "images/projects/inventrack/it_0m.png",
-        "images/projects/inventrack/it_1.png",
-        "images/projects/inventrack/it_2.png",
-        "images/projects/inventrack/it_3.png"
+        "images/projects/uncleboojies/ub_0d.png",
+        "images/projects/uncleboojies/ub_0m.png"
       ],
-    
-      "live": "https://print-flow-stock.base44.app/",
+      "live": "",
       "github": "",
-      "more": "projects.html"
+      "more": "projects.html",
+      "stats": [
+        {
+          "value": "4",
+          "label": "Pages designed"
+        },
+        {
+          "value": "11",
+          "label": "Chapters designed one by one"
+        },
+        {
+          "value": "8",
+          "label": "Experience page versions"
+        },
+        {
+          "value": "3",
+          "label": "Screen sizes per page"
+        }
+      ],
+      "chapters": [
+        {
+          "page": "The Lifeblood of an Isolated Community",
+          "label": "Editorial layout",
+          "intro": "A content page designed like a magazine spread.",
+          "decisions": [
+            {
+              "title": "A magazine layout for a long page",
+              "why": "I organized the page like a magazine spread, so a long page reads in visual steps instead of one continuous block.",
+              "images": [
+                "images/projects/uncleboojies/ub_c1_1.png"
+              ]
+            },
+            {
+              "title": "Every image placed with its own text",
+              "why": "I paired each image with the paragraph it belongs to and gave each one a caption, so the images help tell the story instead of just decorating it.",
+              "images": [
+                "images/projects/uncleboojies/ub_c1_2.png",
+                "images/projects/uncleboojies/ub_c1_3.png"
+              ]
+            }
+          ],
+          "url": "https://www.uncleboojies.com/uncorked/the-land/lifeblood/"
+        },
+        {
+          "page": "Blood in the Hollers",
+          "label": "Historical post",
+          "intro": "A long historical post on how federal taxes, raids and Prohibition-era poisonings affected Kentucky's whiskey makers.",
+          "decisions": [
+            {
+              "title": "A chart that makes the numbers visible",
+              "why": "The federal whiskey tax rose tenfold in three years. An animated chart lets the reader see that jump instead of reading it in a paragraph, and because it's built in HTML/CSS rather than as an image, it scales cleanly on mobile.",
+              "images": [
+                "images/projects/uncleboojies/ub_c2_1.png",
+                 "images/projects/uncleboojies/ub_c2_1_2.png"
+              ]
+            },
+            {
+              "title": "Highlighted phrases",
+              "why": "Key phrases are pulled out and highlighted, giving readers points to rest and making the main ideas easy to find while scanning.",
+              "images": [
+                "images/projects/uncleboojies/ub_c2_2.png"
+              ]
+            }
+          ],
+          "url": "https://www.uncleboojies.com/uncorked/the-spirits/blood-in-the-hollers/"
+        },
+        {
+          "page": "Why Do You Keep Calling My Whisky Bourbon?",
+          "label": "Long-form content",
+          "intro": "An introduction, conclusions and eleven chapters, each with a different type of content.",
+          "decisions": [
+            {
+              "title": "Where the page started",
+              "why": "The content came as a PDF file with images that needed to be transferred to a web page. I thought about ways to present the information that would keep it easy to read and also interesting.",
+              "images": [
+                "images/projects/uncleboojies/ub_c3_0.png"
+              ]
+            },
+            {
+              "title": "A side menu on desktop, an accordion on mobile",
+              "why": "On desktop, a side menu keeps all eleven chapters one click away and shows one at a time. On mobile, where a side menu doesn't fit, the same chapters become an accordion: the page stays short at first glance and readers open only what they want to read.",
+              "images": [
+                "images/projects/uncleboojies/ub_c3_1.png",
+                "images/projects/uncleboojies/ub_c3_2.png"
+              ]
+            },
+            {
+              "title": "Each chapter designed for its content",
+              "why": "Some chapters had many images, others only text, others a lot of text and few images. I designed each one for what it had to show instead of forcing one template on all eleven, and also designed the introduction and conclusions.",
+              "images": [
+                "images/projects/uncleboojies/ub_c3_3.png",
+                "images/projects/uncleboojies/ub_c3_4.png",
+                "images/projects/uncleboojies/ub_c3_5.png"
+              ]
+            }
+          ],
+          "url": "https://www.uncleboojies.com/uncorked/the-spirits/whisky-bourbon/"
+        },
+        {
+          "page": "Experience",
+          "label": "Booking experiences",
+          "intro": "Eight experiences, each with its own price, details and way to book.",
+          "decisions": [
+            {
+              "title": "Where the page started",
+              "why": "The Experience page already presented everything Uncle Boojie's offers. My goal was to make it work even better, so guests could compare every option at a glance and take the next step easily, especially on mobile. I started by sketching the new structure in Excalidraw before building it in Divi.",
+              "images": [
+                "images/projects/uncleboojies/ub_c4_start.png",
+                "images/projects/uncleboojies/ub_c4_sketch.png"
+              ]
+            },
+            {
+              "title": "Cards to compare at a glance",
+              "why": "A two-level card system: the main experiences first, then the six signature experiences in a grid that becomes a swipe carousel on mobile. The buttons stay consistent with the rest of the site: outline as the standard, solid gold only for the main action inside each card.",
+              "images": [
+                "images/projects/uncleboojies/ub_c4_1.png",
+                "images/projects/uncleboojies/ub_c4_2.png",
+                "images/projects/uncleboojies/ub_c4_3.png"
+              ]
+            },
+            {
+              "title": "A request form that fills itself in",
+              "why": "The form opens on the same page with the selected experience already written in, so guests don't have to type it or leave the page.",
+              "images": [
+                "images/projects/uncleboojies/ub_c4_4.png"
+              ]
+            },
+            {
+              "title": "The original text, reorganized to be read",
+              "why": "I didn't write new copy. The long invitation text was split across the invitation, the Single Barrel card and the closing section, and its strongest line became the closing headline, so the same words are now read instead of skipped.",
+              "images": [
+                "images/projects/uncleboojies/ub_c4_5.png"
+              ]
+            }
+          ]
+        }
+      ],
+      "agency": "Andrew Kung Group",
+      "credits": "Brand, site style, content and photography: Uncle Boojie's and Andrew Kung Group. Page design, UX and build within that style: Gretel Alvarez Tang.",
+      "agencyUrl": "https://www.andrewkung.com/"
     },
-
     {
       "id": "hiraldowoodresin",
       "title": "Hiraldo Wood Resin",
       "subtitle": "WordPress",
       "category": "WordPress",
+      "tagline": "Online store and custom-order flow for a live-edge wood and resin artist.",
       "cardStack": "This is a live client project currently in its final phase, and that product photography is pending the client's photographer, so some visuals shown are placeholders for demonstration purposes.",
       "year": "2026",
       "featured": true,
       "summary": "Custom WooCommerce build for a live-edge wood and resin artist, combining a dynamic design library, a multi-step customization form, and a fully custom design system. This is a live client project currently in its final phase, and product photography is pending the client's photographer, so some visuals shown are placeholders for demonstration purposes.",
       "description": {
         "text": "This project is a full e-commerce and custom-commission website for a woodworking and resin artist. Beyond a standard WooCommerce shop, the build includes a dynamic 'Design Library' where customers can select existing sketches and carry that reference directly into a multi-step customization request, plus a fully documented design system covering color, typography, and reusable components.",
-        "images": [ "images/projects/hwr/hwr_0d.png"]
+        "images": [
+          "images/projects/hwr/hwr_0d.png"
+        ]
       },
       "challenge": {
         "text": "The client's needs evolved significantly mid-project: an initial 'completed work' gallery had to be rebuilt into a 'Design Library' where each sketch links directly into the customization form, carrying the selected design's title and image as context. This required connecting two separate custom post types and forms through URL parameters and JavaScript, while avoiding duplicate script execution across pages that share form field names. A second challenge was styling deeply nested WooCommerce and form plugin markup, which required resolving CSS specificity conflicts against third-party plugin styles rather than relying on simple class overrides.",
-        "images": ["images/projects/hwr/hwr_1.png"]
+        "images": [
+          "images/projects/hwr/hwr_1.png"
+        ]
       },
       "solution": {
         "text": "A custom PHP shortcode queries a dedicated 'sketches' post type and renders each design with a button that passes its title and image URL as query parameters to the customization form. A scoped JavaScript snippet reads those parameters, pre-fills the message field, displays a visual reference above it, and appends the reference link at submission time without ever showing it to the user. Each script checks for its target form's unique ID before running, preventing cross-page conflicts. On the styling side, a full design system was built from a client-approved color and typography reference, using CSS custom properties for a single source of truth, with targeted high-specificity selectors to override WooCommerce Blocks and Forminator's default styles consistently across desktop and mobile.",
-        "images": ["images/projects/hwr/hwr_2.png", "images/projects/hwr/hwr_3.png"]
+        "images": [
+          "images/projects/hwr/hwr_2.png",
+          "images/projects/hwr/hwr_3.png"
+        ]
       },
       "impact": {
         "text": "The final site gives the client a clear, scalable way to showcase available designs and convert interest directly into a structured quote request, reducing back-and-forth communication before a project even starts. The design system means future style changes only need to happen in one place, and the responsive fixes ensure the experience holds up across devices despite the site's complexity.",
-        "images": ["images/projects/hwr/hwr_4.png"]
+        "images": [
+          "images/projects/hwr/hwr_4.png"
+        ]
       },
-    
       "technologies": [
         "WordPress",
         "WooCommerce",
@@ -229,93 +344,114 @@
       "github": "",
       "more": "projects.html"
     },
-    
     {
-  "id": "handydmd",
-  "title": "Handyman DMD",
-  "subtitle": "WordPress",
-  "category": "WordPress",
-  "cardStack": "WordPress • Branding • UI • Custom CSS",
-  "year": "2025",
-  "featured": false,
-  "summary": "Service-based website focused on clarity, trust, and fast access to key actions.",
-
-  "description": {
-    "text": "This project focuses on translating a hands-on service business into a clear and trustworthy digital experience. The goal was to remove friction from the user journey by prioritizing immediate understanding of services and direct access to contact actions. Every design decision supports clarity over decoration, ensuring users can quickly recognize what is offered and how to take the next step.",
-    "images": [
-      "images/projects/handydmd/h_0d.png",
-      "images/projects/handydmd/h_0m.png"
-    ]
-  },
-
-"challenge": {
-  "text": "The business offers multiple services, which can easily overwhelm users if not structured carefully. The challenge was to present all information clearly while maintaining a sense of simplicity and trust.\n\nTo approach this, early layout sketches were used to explore how services, navigation, and call-to-action elements should be organized. This step helped define a clear hierarchy before moving into the final interface, ensuring that information would guide the user instead of competing for attention.",
-  "images": ["images/projects/handydmd/h_5.png"]
-},
-
-  "solution": {
-    "text": "The solution focuses on structured simplicity. Content was grouped into clear service categories, supported by a consistent visual hierarchy that directs attention from overview to action. Navigation was simplified to reduce cognitive load, while custom CSS adjustments refined spacing, typography, and visual rhythm. The design intentionally avoids unnecessary elements, allowing key actions like contacting or requesting services to remain highly visible.",
-    "images": ["images/projects/handydmd/h_3.png","images/projects/handydmd/h_2.png",
-      "images/projects/handydmd/h_4.png"]
-  },
-
-  "impact": {
-    "text": "The final result is a more focused and reliable user experience that improves how services are understood and how users interact with the site. By reducing visual noise and reinforcing clear pathways, the design supports faster decision-making and builds trust through consistency and clarity.",
-    "images": [
-      "images/projects/handydmd/h_1.png"
-    
-    ]
-  },
-
-  "technologies": ["WordPress"],
-  "roles": [
-    "Brand Identity",
-    "UI Design",
-    "Content Structuring",
-    "WordPress Customization",
-    "Responsive Design"
-  ],
-  "features": [],
-  "images": [
-    "images/projects/handydmd/h_0d.png",
-    "images/projects/handydmd/h_0m.png"
-  ],
-  "live": "https://handydmd.com/",
-  "github": "",
-  "more": "projects.html"
-},    
-
+      "id": "inventrack",
+      "title": "InvenTrack",
+      "subtitle": "Web Application",
+      "category": "Web Application",
+      "tagline": "Inventory app that brings printers, supplies, equipment, sales and loans into one system.",
+      "cardStack": "An inventory management application designed to bring printer monitoring, supplies, equipment, consumables, sales, loans, maintenance, locations, and reporting into one connected operational system.",
+      "year": "2026",
+      "featured": true,
+      "summary": "A multi-module inventory management application that I have been developing iteratively using Base44. I used the platform's AI-assisted building capabilities to turn a complex set of inventory requirements into a functional system with connected modules, operational workflows, reporting, mobile behavior, and a dashboard focused on actionable information.",
+      "description": {
+        "text": "InvenTrack started as an inventory-management concept and gradually expanded as I identified more relationships and operational needs. I defined how the different areas of the system should work together, including Printer Models, individual Printer Units, ink and replacement supplies, Consumables, Equipment, Tablets, Locations, Sales, Loans, maintenance, and reporting. Rather than treating every area as an isolated inventory table, I worked on creating clear responsibilities and relationships between them so the application could function as one connected system.",
+        "images": [
+          "images/projects/inventrack/it_0d.png"
+        ]
+      },
+      "challenge": {
+        "text": "The biggest challenge was managing the growing complexity of the application without allowing the same information to become duplicated across multiple modules. As the project evolved, I had to decide what information belonged to reference data, what staff needed for daily operations, what should exist only as transaction history, and what should appear only in reports. For example, Printer Models define the supplies a model uses, while Printer Units represent the individual physical printers and their current supply conditions. Tablets remain individual inventory records while Loans store borrowing transactions over time. Sales reference existing Consumables instead of creating a separate sales inventory. I also had to continually reorganize the navigation and dashboard as the number of entities and workflows increased.",
+        "images": [
+          "images/projects/inventrack/it_1.png"
+        ]
+      },
+      "solution": {
+        "text": "I used Base44 as the implementation platform and worked through the application in iterative rounds, defining requirements, testing the resulting behavior, identifying problems, and refining the system. I reorganized the information architecture into operational modules, reports, and setup/reference data; defined relationships between inventory records and transactions; established status and alert logic; and redesigned the Today dashboard around the principle of summary, problem, and action. I also specified workflows for printer supply monitoring, replacement-stock availability, consumable sales, tablet lending and returns, equipment maintenance, location tracking, filtering, search, reporting, and responsive mobile use. Because I worked primarily within Base44's available AI credits, features often had to be prioritized and grouped carefully before each implementation round.",
+        "images": [
+          "images/projects/inventrack/it_2.png"
+        ]
+      },
+      "impact": {
+        "text": "The result is a functional application with multiple connected entities instead of a collection of disconnected inventory tables. Staff can identify printers requiring attention, compare installed supply needs with replacement stock, manage consumables and equipment, record sales, track tablet loans and returns, monitor maintenance, search inventory, and access detailed reports from the same system. For me, the project became an extended exercise in product thinking: taking a broad operational problem, breaking it into manageable systems, defining how those systems should communicate, testing the experience, and continuously refining it as new requirements emerged.",
+        "images": [
+          "images/projects/inventrack/it_3.png"
+        ]
+      },
+      "technologies": [
+        "Base44"
+      ],
+      "roles": [
+        "Product Design",
+        "UI/UX Design",
+        "Information Architecture",
+        "Workflow Design",
+        "Data Structure Planning",
+        "Responsive Design",
+        "Usability Testing",
+        "AI-Assisted Implementation"
+      ],
+      "features": [
+        "Operational dashboard focused on urgent issues and quick actions",
+        "Printer Models connected to individual physical Printer Units",
+        "Structured printer ink, toner, and supply-level monitoring",
+        "Replacement supply inventory connected to printer needs",
+        "Consumable inventory with sales and automatic stock updates",
+        "Tablet inventory with loan and return transaction history",
+        "Equipment and maintenance tracking",
+        "Location-based asset organization",
+        "Cross-category inventory and supply reports",
+        "Search, filtering, status indicators, and actionable alerts",
+        "Responsive workflows for desktop and mobile use"
+      ],
+      "images": [
+        "images/projects/inventrack/it_0d.png",
+        "images/projects/inventrack/it_0m.png",
+        "images/projects/inventrack/it_1.png",
+        "images/projects/inventrack/it_2.png",
+        "images/projects/inventrack/it_3.png"
+      ],
+      "live": "https://print-flow-stock.base44.app/",
+      "github": "",
+      "more": "projects.html"
+    },
     {
       "id": "jgphoto",
       "title": "J&G Photography",
       "subtitle": "Coded",
       "category": "Custom Code",
+      "tagline": "Photography studio website that guides visitors from the gallery to booking.",
       "cardStack": "HTML • CSS • JavaScript",
       "year": "2025",
       "featured": true,
       "summary": "Custom-coded photography website focused on service presentation, gallery structure, and user flow.",
-
       "description": {
         "text": "This project is a custom-coded website for a photography business. The goal was to create a structure that prioritizes clarity without losing the emotional impact of the imagery. The design focuses on guiding the user through services, galleries, and booking options in a way that feels natural rather than overwhelming.",
-        "images": ["images/projects/jgphoto/jg_8.png"]
+        "images": [
+          "images/projects/jgphoto/jg_8.png"
+        ]
       },
       "challenge": {
         "text": "The main challenge was organizing multiple photography services while maintaining a calm and visually driven experience. Photography websites often rely heavily on imagery, which can easily disrupt navigation and hierarchy. The goal was to balance strong visual content with clear structure, ensuring users could explore without feeling lost and always have a clear path toward booking or contact.",
-        "images": ["images/projects/jgphoto/jg_1.png","images/projects/jgphoto/jg_10.png"]
+        "images": [
+          "images/projects/jgphoto/jg_1.png",
+          "images/projects/jgphoto/jg_10.png"
+        ]
       },
       "solution": {
-       "text": "The layout was designed to guide the user progressively rather than presenting everything at once. Services are introduced as visual entry points, allowing users to choose based on context instead of reading long descriptions. A masonry-style gallery was implemented to accommodate different image proportions. Instead of forcing consistency through cropping, the layout preserves the integrity of each photograph, creating a more organic visual rhythm. The package customization system was structured to reduce cognitive load by revealing options only after a selection is made. This prevents users from mixing choices across packages and keeps the decision process focused and controlled.",
-        "images": [ "images/projects/jgphoto/jg_5.png",
-        "images/projects/jgphoto/jg_6.png",
-        "images/projects/jgphoto/jg_7.png"]
+        "text": "The layout was designed to guide the user progressively rather than presenting everything at once. Services are introduced as visual entry points, allowing users to choose based on context instead of reading long descriptions. A masonry-style gallery was implemented to accommodate different image proportions. Instead of forcing consistency through cropping, the layout preserves the integrity of each photograph, creating a more organic visual rhythm. The package customization system was structured to reduce cognitive load by revealing options only after a selection is made. This prevents users from mixing choices across packages and keeps the decision process focused and controlled.",
+        "images": [
+          "images/projects/jgphoto/jg_5.png",
+          "images/projects/jgphoto/jg_6.png",
+          "images/projects/jgphoto/jg_7.png"
+        ]
       },
       "impact": {
         "text": "The final result provides a structured and intuitive experience that supports both exploration and decision-making. Users can quickly understand the type of services offered, engage with the photography style, and move toward booking without unnecessary friction. The design reinforces trust by keeping the experience simple, guided, and visually consistent.",
         "images": [
-          "images/projects/jgphoto/jg_9.png"         
+          "images/projects/jgphoto/jg_9.png"
         ]
       },
-
       "technologies": [
         "HTML",
         "CSS",
@@ -339,44 +475,98 @@
       "live": "https://jgstudio.vercel.app",
       "more": "projects.html"
     },
-
+    {
+      "id": "handydmd",
+      "title": "Handyman DMD",
+      "subtitle": "WordPress",
+      "category": "WordPress",
+      "tagline": "Service business website built around trust and quick access to contact.",
+      "cardStack": "WordPress • Branding • UI • Custom CSS",
+      "year": "2025",
+      "featured": false,
+      "summary": "Service-based website focused on clarity, trust, and fast access to key actions.",
+      "description": {
+        "text": "This project focuses on translating a hands-on service business into a clear and trustworthy digital experience. The goal was to remove friction from the user journey by prioritizing immediate understanding of services and direct access to contact actions. Every design decision supports clarity over decoration, ensuring users can quickly recognize what is offered and how to take the next step.",
+        "images": [
+          "images/projects/handydmd/h_0d.png",
+          "images/projects/handydmd/h_0m.png"
+        ]
+      },
+      "challenge": {
+        "text": "The business offers multiple services, which can easily overwhelm users if not structured carefully. The challenge was to present all information clearly while maintaining a sense of simplicity and trust.\n\nTo approach this, early layout sketches were used to explore how services, navigation, and call-to-action elements should be organized. This step helped define a clear hierarchy before moving into the final interface, ensuring that information would guide the user instead of competing for attention.",
+        "images": [
+          "images/projects/handydmd/h_5.png"
+        ]
+      },
+      "solution": {
+        "text": "The solution focuses on structured simplicity. Content was grouped into clear service categories, supported by a consistent visual hierarchy that directs attention from overview to action. Navigation was simplified to reduce cognitive load, while custom CSS adjustments refined spacing, typography, and visual rhythm. The design intentionally avoids unnecessary elements, allowing key actions like contacting or requesting services to remain highly visible.",
+        "images": [
+          "images/projects/handydmd/h_3.png",
+          "images/projects/handydmd/h_2.png",
+          "images/projects/handydmd/h_4.png"
+        ]
+      },
+      "impact": {
+        "text": "The final result is a more focused and reliable user experience that improves how services are understood and how users interact with the site. By reducing visual noise and reinforcing clear pathways, the design supports faster decision-making and builds trust through consistency and clarity.",
+        "images": [
+          "images/projects/handydmd/h_1.png"
+        ]
+      },
+      "technologies": [
+        "WordPress"
+      ],
+      "roles": [
+        "Brand Identity",
+        "UI Design",
+        "Content Structuring",
+        "WordPress Customization",
+        "Responsive Design"
+      ],
+      "features": [],
+      "images": [
+        "images/projects/handydmd/h_0d.png",
+        "images/projects/handydmd/h_0m.png"
+      ],
+      "live": "https://handydmd.com/",
+      "github": "",
+      "more": "projects.html"
+    },
     {
       "id": "jlprezc",
       "title": "JLPrezc Portfolio",
       "subtitle": "Coded",
       "category": "Custom Code",
+      "tagline": "Dark photography portfolio that keeps the focus on the images.",
       "cardStack": "HTML • CSS • JS",
       "year": "2025",
-      "featured": true,
+      "featured": false,
       "summary": "Dark photography portfolio designed to keep the focus on image presentation.",
-
-      
-        "description": {
-          "text": "This project explores how to present a large body of photography without overwhelming the viewer. The primary decision was to reduce visual noise and let the images carry the experience. A dark interface was not only a stylistic choice, but a functional one, used to control contrast, guide attention, and create a consistent viewing environment across different image types.",
-          "images": ["images/projects/jlprezc/jlperezc_1.png"]
-        },
-      
-        "challenge": {
-          "text": "The main challenge was not just the number of images, but how they are perceived when presented together. Large image sets can quickly become visually chaotic if hierarchy is not controlled. The problem became defining how much content to show at once, how to group images meaningfully, and how to maintain focus without restricting exploration.",
-          "images": [
-            "images/projects/jlprezc/jlperezc_2.png",
-                       "images/projects/jlprezc/jlperezc_7.png",
-            "images/projects/jlprezc/jlperezc_4.png"
-          ]
-        },
-      
-        "solution": {
-          "text": "The gallery was designed as a controlled system rather than a simple grid. Instead of displaying all images at once, the layout limits initial exposure and allows expansion when needed. This reduces cognitive load while still supporting a large volume of content. The masonry-style arrangement preserves the natural proportions of the images, avoiding forced cropping and maintaining visual integrity. Interaction patterns such as overlays and progressive reveal were used to give users control without adding visual clutter.",
-          "images": [ "images/projects/jlprezc/jlperezc_5.png"]
-        },
-      
-        "impact": {
-          "text": "The final result is a gallery experience that feels organized without being rigid. Images remain the primary focus while the system behind them provides structure and flow. The design supports both quick browsing and deeper exploration, reflecting a balance between visual impact and usability.",
-          "images": ["images/projects/jlprezc/jlperezc_6.png"]
-        }
-      
-      ,
-
+      "description": {
+        "text": "This project explores how to present a large body of photography without overwhelming the viewer. The primary decision was to reduce visual noise and let the images carry the experience. A dark interface was not only a stylistic choice, but a functional one, used to control contrast, guide attention, and create a consistent viewing environment across different image types.",
+        "images": [
+          "images/projects/jlprezc/jlperezc_1.png"
+        ]
+      },
+      "challenge": {
+        "text": "The main challenge was not just the number of images, but how they are perceived when presented together. Large image sets can quickly become visually chaotic if hierarchy is not controlled. The problem became defining how much content to show at once, how to group images meaningfully, and how to maintain focus without restricting exploration.",
+        "images": [
+          "images/projects/jlprezc/jlperezc_2.png",
+          "images/projects/jlprezc/jlperezc_7.png",
+          "images/projects/jlprezc/jlperezc_4.png"
+        ]
+      },
+      "solution": {
+        "text": "The gallery was designed as a controlled system rather than a simple grid. Instead of displaying all images at once, the layout limits initial exposure and allows expansion when needed. This reduces cognitive load while still supporting a large volume of content. The masonry-style arrangement preserves the natural proportions of the images, avoiding forced cropping and maintaining visual integrity. Interaction patterns such as overlays and progressive reveal were used to give users control without adding visual clutter.",
+        "images": [
+          "images/projects/jlprezc/jlperezc_5.png"
+        ]
+      },
+      "impact": {
+        "text": "The final result is a gallery experience that feels organized without being rigid. Images remain the primary focus while the system behind them provides structure and flow. The design supports both quick browsing and deeper exploration, reflecting a balance between visual impact and usability.",
+        "images": [
+          "images/projects/jlprezc/jlperezc_6.png"
+        ]
+      },
       "technologies": [],
       "roles": [
         "UI Design",
@@ -393,29 +583,34 @@
       "live": "https://jlperezc.vercel.app/",
       "more": "projects.html"
     },
-
     {
       "id": "aurora",
       "title": "Aurora Wellness Center",
       "subtitle": "WordPress",
       "category": "WordPress",
+      "tagline": "Brand and website concept for a calm, cohesive wellness center.",
       "cardStack": "WordPress • Branding • UI • Custom CSS",
       "year": "2025",
       "featured": false,
       "summary": "Wellness website case study focused on visual consistency, calm interaction, and brand alignment.",
-
       "description": {
         "text": "This project is a conceptual wellness website developed as part of a design course. The goal was to approach it as a real-world scenario, creating a complete brand and web experience from scratch rather than redesigning an existing product. Every decision was made with the intention of building a calm, cohesive, and visually aligned digital environment that reflects the values of a wellness brand.",
-        "images": [   "images/projects/aurora/a_0d.png",
-        "images/projects/aurora/a_0m.png"]
+        "images": [
+          "images/projects/aurora/a_0d.png",
+          "images/projects/aurora/a_0m.png"
+        ]
       },
       "challenge": {
         "text": "Since this project was built from the ground up, the main challenge was defining a clear visual direction without relying on an existing structure. The design needed to communicate calmness, clarity, and trust while organizing different types of content in a way that felt intuitive and balanced. The focus was not only on aesthetics, but on how layout, spacing, and hierarchy could support a more relaxing and understandable user experience.",
-        "images": ["images/projects/aurora/a_1.png"]
+        "images": [
+          "images/projects/aurora/a_1.png"
+        ]
       },
       "solution": {
         "text": "The solution focused on creating a structured layout system that could guide the user naturally through the content. A consistent use of spacing, typography, and color helped reinforce a calm visual rhythm across sections. Each element was intentionally simplified to avoid visual noise, allowing the content to feel more approachable while maintaining a strong and cohesive brand identity.",
-        "images": ["images/projects/aurora/a_2.png"]
+        "images": [
+          "images/projects/aurora/a_2.png"
+        ]
       },
       "impact": {
         "text": "The final result demonstrates how a clear design system can create a cohesive and intentional experience from the ground up. The project highlights decision-making focused on user perception, readability, and emotional tone, showing how design choices can support both brand identity and usability in a wellness-focused environment.",
@@ -423,12 +618,11 @@
           "images/projects/aurora/a_3.png"
         ]
       },
-
       "technologies": [
-  "WordPress",
-  "Adobe Illustrator",
-  "Custom CSS"
-],
+        "WordPress",
+        "Adobe Illustrator",
+        "Custom CSS"
+      ],
       "roles": [
         "Brand Identity",
         "UI Design",
@@ -445,34 +639,40 @@
       "github": "",
       "more": "projects.html"
     },
-
     {
       "id": "quillpp",
       "title": "Quill Pen Press",
       "subtitle": "Webflow",
       "category": "Webflow",
+      "tagline": "Brand and one-page website concept for a publishing platform.",
       "cardStack": "Webflow • Branding • UI",
       "year": "2025",
       "featured": false,
       "summary": "Publishing platform concept focused on structure, readability, and brand credibility.",
-
       "description": {
         "text": "This project is a brand and website concept for a publishing platform. The goal was to create a credible visual presence that supports readability, content exploration, and a professional identity for writers and readers.",
-        "images": ["images/projects/qpp/qpp_2.png"]
+        "images": [
+          "images/projects/qpp/qpp_2.png"
+        ]
       },
       "challenge": {
         "text": "The project was intentionally designed as a single-page website, which forced me to think carefully about how information should flow without overwhelming the user. Instead of relying on multiple pages, I had to prioritize what the user needs to understand first, and how each section would naturally lead to the next. The challenge became less about adding content, and more about controlling hierarchy, pacing, and clarity within a limited space.",
-        "images": ["images/projects/qpp/qpp_4.png"]
+        "images": [
+          "images/projects/qpp/qpp_4.png"
+        ]
       },
       "solution": {
         "text": "The solution focused on building a clear visual hierarchy before adding stylistic elements. I started by structuring content into distinct sections, each with a specific role, so the user could scan and understand the site progressively. Typography and spacing were used intentionally to guide attention — larger headings to establish entry points, controlled line lengths for readability, and consistent spacing to create rhythm between sections. Instead of designing visually first, I approached the layout as a system, ensuring that every element had a purpose and contributed to clarity and trust.",
-        "images": ["images/projects/qpp/qpp_5.png"]
+        "images": [
+          "images/projects/qpp/qpp_5.png"
+        ]
       },
       "impact": {
         "text": "The final concept communicates a more structured and credible publishing platform. By prioritizing hierarchy and readability, the design supports how users process information rather than relying on visual decoration alone. This approach creates a stronger sense of trust and makes the experience feel intentional, organized, and easier to navigate.",
-        "images": ["images/projects/qpp/qpp_1.png"]
+        "images": [
+          "images/projects/qpp/qpp_1.png"
+        ]
       },
-
       "technologies": [
         "Webflow",
         "Illustrator",
@@ -493,7 +693,6 @@
         "Clear visual hierarchy",
         "Responsive layout"
       ],
-
       "images": [
         "images/projects/qpp/qpp_0d.png",
         "images/projects/qpp/qpp_0m.png"
@@ -501,202 +700,8 @@
       "live": "https://quillpenpress.webflow.io",
       "github": "",
       "more": "projects.html"
-    },   
-
-    {
-      "id": "juicysplash",
-      "title": "Juicy Splash",
-      "subtitle": "Coded",
-      "category": "Branding",
-      "cardStack": "HTML • CSS • JS",
-      "year": "2024",
-      "featured": false,
-      "summary": "Tropical brand concept with a vibrant single-page website structure.",
-
-      "description": {
-        "text": "This project explores a tropical juice brand through a bright and energetic web concept. I focused on using color and movement to communicate freshness, while keeping the layout structured enough to guide the user clearly through the experience.",
-        "images": ["images/projects/juicys_plash/js_2.png"]
-      },
-      "challenge": {
-        "text": "Because the project was designed as a single-page experience, all content had to exist within one continuous flow. The main challenge was balancing a vibrant, expressive visual style with a layout that remained clear and easy to navigate, avoiding visual overload.",
-        "images": ["images/projects/juicys_plash/js_1.png"]
-      },
-      "solution": {
-        "text": "To balance the strong visual energy of the brand, I used a simple section-based layout that guides the user through the page without overwhelming them. I introduced subtle motion elements, such as floating bubbles and a moving ticker, to reinforce the idea of freshness and fluidity while keeping the experience engaging. These elements were intentionally controlled so they added energy without distracting from the content. Spacing and hierarchy were used to ensure the interface remained readable despite the vibrant color palette and movement.",
-        "images": ["images/projects/juicys_plash/js_5.png"]
-      },
-      "impact": {
-        "text": "The final concept communicates a sense of freshness and energy while maintaining clarity. Users can move through the experience intuitively, showing that a vibrant visual direction can still support usability when guided by structure and hierarchy.",
-        "images": ["images/projects/juicys_plash/js_4.png"]
-      },
-
-      "technologies": ["Illustrator", "HTML", "CSS", "JS"],
-      "roles": [
-        "UI Design",
-        "Front-End Development",
-        "Content Structuring",
-        "Responsive Design"
-      ],
-      "features": [],
-      "images": [
-        "images/projects/juicys_plash/js_0d.png",
-        "images/projects/juicys_plash/js_0m.png",
-        "images/projects/juicys_plash/js_1.png"
-      ],
-      "github": "https://github.com/gatang17/creative_portfolio.git",
-      "live": "https://juicysplash.vercel.app/",
-      "more": "projects.html"
-    },
-
-    {
-      "id": "gatangstudio",
-      "title": "GATANG STUDIO",
-      "subtitle": "Editorial Branding & Web Concept",
-      "category": "Brand Identity",
-      "cardStack": "Figma",
-      "year": "2026",
-      "featured": false,
-      "summary": "Conceptual personal creative studio identity combining editorial layouts, industrial-inspired typography, and strategic visual storytelling.",
-    
-      "description": {
-        "text": "GTANG Studio is a personal branding and web design project created to explore a more editorial and visually structured approach to digital design. Inspired by industrial typography, architecture, print systems, and modern editorial layouts, the project combines bold typography, strong hierarchy, and minimal color accents to create a distinctive studio identity.",
-        "images": [
-       
-        ]
-      },
-    
-      "challenge": {
-        "text": "The main challenge was balancing artistic direction with usability. The goal was to create a website that felt experimental and visually memorable without losing clarity or structure. Another challenge was adapting an editorial-inspired desktop composition into a responsive mobile experience while maintaining the same visual identity.",
-        "images": [
-    
-        ]
-      },
-    
-      "solution": {
-        "text": "The final direction uses a modular editorial grid, architectural photography, custom typographic hierarchy, and selective red accents to guide attention across the interface. Large vertical typography, asymmetrical layouts, and structured spacing create a visual system that feels both modern and intentional while still remaining functional and readable.",
-        "images": [
-        
-        ]
-      },
-    
-      "impact": {
-        "text": "The project demonstrates how branding, typography, and layout systems can work together to create a strong visual identity without relying on heavy graphics or complex interactions. The final result feels more like a curated design publication than a traditional agency template, giving the studio a memorable and distinctive presence.",
-        "images": [
-           "images/projects/gatang/gatang_1.png"
-          
-        ]
-      },
-    
-      "technologies": [
-        "Figma"
-      ],
-        
-      "roles": [
-        "Brand Identity",
-        "UI Design",
-        "Art Direction"
-      ],
-    
-      "features": [
-        "Editorial-inspired layout system",
-        "Responsive mobile adaptation",
-        "Custom typographic hierarchy",
-        "Architectural visual direction",
-        "Minimal color strategy"
-      ],
-    
-      "images": [
-        "images/projects/gatang/gatang_0m.png",
-        "images/projects/gatang/gatang_0d.png"
-      ],
-    
-      "github": "",
-      "live": "https://www.figma.com/proto/ETvknbGbJqcfsRcUpACMeI/newspaper_design?node-id=7-272&p=f&t=9zv5El2qoaSeiUs0-1&scaling=scale-down&content-scaling=responsive&page-id=0%3A1",
-      "more": "projects.html"
-    },
-
-    {
-      "id": "berrysweet",
-      "title": "Berry Sweet",
-      "subtitle": "Figma",
-      "category": "UI Design",
-      "cardStack": "Figma",
-      "year": "2026",
-      "featured": false,
-      "summary": "Dessert UI concept focused on emotional tone, softness, and visual balance.",
-
-      "description": {
-        "text": "This project translates a dessert concept into a soft and visually engaging interface. The focus was on creating an emotional tone through color, shape, imagery, and layout balance.",
-        "images": ["images/projects/berry_sweet/bs_4.png"]
-      },
-      "challenge": {
-        "text": "Because the project was designed as a single-page concept, the content needed to feel complete without becoming crowded. The challenge was to express sweetness and warmth while keeping the interface balanced and easy to understand.",
-        "images": []
-      },
-      "solution": {
-        "text": "A soft palette, rounded visual language, and simple content structure were used to create a pleasant user experience. The layout keeps the concept cohesive while allowing the visuals to carry the emotional tone.",
-        "images": ["images/projects/berry_sweet/bs_3.png"]
-      },
-      "impact": {
-        "text": "The final design communicates the dessert concept clearly and creates a stronger emotional connection through visual style, softness, and consistency.",
-        "images": [
-          "images/projects/berry_sweet/bs_1.png",
-          "images/projects/berry_sweet/bs_2.png"
-        ]
-      },
-
-      "technologies": ["Figma"],
-      "roles": ["UI Design"],
-      "features": [],
-      "images": [
-        "images/projects/berry_sweet/bs_0d.png",
-        "images/projects/berry_sweet/bs_0m.png"
-      ],
-      "github": "",
-      "live": "",
-      "more": "projects.html"
     }
   ],
-
-  "skills": [
-    {
-      "id": "graphic",
-      "title": "Graphic Design",
-      "overlay": "Graphic Design",
-      "points": [
-        "Brand identity development",
-        "Editorial and layout design",
-        "Typography systems",
-        "Visual hierarchy and composition"
-      ],
-      "tools": ["Adobe Creative Suite"]
-    },
-    {
-      "id": "uiux",
-      "title": "Digital Design",
-      "overlay": "Digital Design",
-      "points": [
-        "Creating clear and easy-to-use websites",
-        "Planning layouts and visual flow",
-        "Choosing typography and color for readability",
-        "Designing with users in mind"
-      ],
-      "tools": ["Figma", "Adobe XD"]
-    },
-    {
-      "id": "html",
-      "title": "Web Implementation",
-      "overlay": "HTML/CSS/JS",
-      "points": [
-        "Translating design concepts into functional websites",
-        "Building responsive and visually consistent layouts",
-        "Adding interactions to support user experience",
-        "Maintaining design consistency across devices"
-      ],
-      "tools": ["HTML", "CSS", "JavaScript", "Bootstrap"]
-    }
-  ],
-
   "about": [
     {
       "pageTitle": "Resume",
@@ -706,11 +711,65 @@
         "email": "gretelalvareztang@gmail.com",
         "website": "https://gatangdesigns.io"
       },
+      "experience": [
+        {
+          "title": "Web Design Intern",
+          "organization": "Andrew Kung Group",
+          "location": "Louisville, KY",
+          "period": "Sep 2026 – Present",
+          "responsibilities": [
+            "Designed and built four pages for the Uncle Boojie's Bourbon website in WordPress (Divi), working independently within the site's existing visual style; the firm reviewed and approved the final work.",
+            "Designed a chapter navigation system for an 11-chapter page: a side menu on desktop that becomes an accordion on mobile.",
+            "Restructured the Experience page into a card system with a details lightbox and a request form that fills in the selected experience automatically.",
+            "Explored and documented eight design versions, presenting each one for review before building the final page.",
+            "Worked within the client's rules: existing copy only, minimal JavaScript and page-level CSS that doesn't affect the rest of the site."
+          ]
+        },
+        {
+          "title": "Federal Work-Study Student Worker",
+          "organization": "Jefferson Community & Technical College Print Lab",
+          "location": "Louisville, KY",
+          "period": "Oct 2024 – Present",
+          "responsibilities": [
+            "Support students and staff with photo printing, mounting and Adobe Creative Suite; troubleshoot software and printing equipment.",
+            "Help plan photoshoot events for the Communication Arts Technology program.",
+            "Designed InvenTrack, an inventory management app for the print lab, built with AI-assisted development."
+          ]
+        },
+        {
+          "title": "Photographer & Photo Editor",
+          "organization": "Bella Baby Photography · Estudio Esplendor",
+          "location": "Louisville, KY · Holguín, Cuba",
+          "period": "May 2017 – Feb 2024",
+          "responsibilities": [
+            "Ran photo sessions and handled professional editing, retouching and color grading for portraits, events and commercial work.",
+            "Guided clients through product and package selection and managed communication and orders."
+          ]
+        },
+        {
+          "title": "Oracle Database Administrator / Data Analyst",
+          "organization": "ONAT",
+          "location": "Holguín, Cuba",
+          "period": "Sep 2011 – Mar 2017",
+          "responsibilities": [
+            "Managed Oracle databases and SQL systems, maintaining data integrity and system reliability.",
+            "Organized and analyzed institutional data for reporting and supported internal teams with technical troubleshooting."
+          ]
+        }
+      ],
+      "skills & abilities": [
+        "Design: Adobe Creative Suite, Figma",
+        "Web: HTML, CSS, JavaScript",
+        "WordPress (Divi, WooCommerce), Webflow",
+        "UX: information architecture, responsive layouts, content hierarchy",
+        "Technical Foundation: SQL, Java",
+        "Bilingual: English and Spanish"
+      ],
       "education": [
         {
           "institution": "Jefferson Community & Technical College",
           "location": "Louisville, KY",
-          "degree": "Associate of Applied Science\nCommunication Arts Technology: Advertising Design Option",
+          "degree": "Associate of Applied Science\nCommunication Arts Technology: Web Design Option",
           "graduation": "Dec 2026"
         },
         {
@@ -720,91 +779,20 @@
           "graduation": "Jun 2011"
         }
       ],
-      "skills & abilities": [
-        "Design: Adobe Creative Suite",
-        "Web: HTML, CSS, JavaScript",
-        "Technical Foundation: SQL, Java",
-        "Technical and creative workflow support",
-        "Strong communication and teamwork",
-        "Bilingual: English and Spanish"
-      ],
-      "experience": [
-        {
-          "title": "Federal Work-Study Student Worker",
-          "organization": "Jefferson Community & Technical College Print Lab",
-          "location": "Louisville, KY",
-          "period": "Oct 2024 – Present",
-          "responsibilities": [
-            "Provide CAT Lab assistance by supporting students with photo printing, mounting, and Adobe Creative Suite programs.",
-            "Maintain the photography studio, printing lab, and classroom clean, organized, and secure.",
-            "Sell printing supplies and handle cash transactions accurately.",
-            "Troubleshoot basic software and printing equipment issues.",
-            "Ensure compliance with program rules and operational standards."
-          ]
-        },
-        {
-          "title": "Newborn Photographer & Sales Specialist",
-          "organization": "Bella Baby Photography",
-          "location": "Louisville, KY",
-          "period": "Aug 2023 – Aug 2024",
-          "responsibilities": [
-            "Conducted professional photo sessions and edited images.",
-            "Applied color correction and composition adjustments.",
-            "Guided clients through product selection and customized packages.",
-            "Managed client communication and order processing."
-          ]
-        },
-        {
-          "title": "Freelance Photographer & Editor Assistant",
-          "organization": "Estudio Esplendor",
-          "location": "Holguín, Cuba",
-          "period": "May 2017 – Mar 2022",
-          "responsibilities": [
-            "Managed photography projects from concept to final delivery.",
-            "Performed professional image editing, retouching, and color grading.",
-            "Collaborated with clients on portraits, events, and commercial projects.",
-            "Maintained organized digital archives and asset management."
-          ]
-        },
-        {
-          "title": "Oracle Database Administrator / Data Analyst",
-          "organization": "ONAT",
-          "location": "Holguín, Cuba",
-          "period": "2011 – 2016",
-          "responsibilities": [
-            "Managed Oracle databases and SQL systems.",
-            "Organized and analyzed institutional data for reporting and needs.",
-            "Maintained data integrity, structured storage, and system reliability.",
-            "Supported internal teams with technical troubleshooting."
-          ]
-        }
-      ],
       "awards": [
-        "Dean’s List – Distinction for Scholastic Achievement, 2025",
-        "Phi Theta Kappa Honor Society – Lifetime Member",
-        "Recipient of Jubilee Scholarship"
+        "Student Show, Communication Arts Technology",
+        "Dean’s List – Scholastic Achievement",
+        "Scholarships based on academic merit",
+        "The Jefferson Review Periodical literary-art magazine"
       ]
     }
   ],
-
-
-    "testimonials": [
-      {
-        "quote": "It has been a pleasure using Gretel's service. She listened to all of my ideas and requests, and gave me advice on how to get better results for my business. I'd give her more than 5 stars. Thank you! I will be contacting her for my upcoming projects.",
-        "name": "JA. Lobaina",
-        "role": "Manager / Handyman DMD LLC"
-      },
-      {
-        "quote": "Gretel is very dedicated to her work. She brings creative ideas, but always with the business goal in mind. She listened to what I needed for my portfolio, and the result reflects my style as a photographer. I recommend her.",
-        "name": "JL. Cespedes",
-        "role": "Manager / J&G Photography LLC"
-      },
-      {
-        "quote": "I started working with Gretel Alvarez with the idea of creating a website, but I didn't even have a logo. Gretel asked me what idea I had for my logo, and with my idea she made some samples — but she also added her own ideas based on what I was looking for and on her own judgment. After so many examples, I was able to choose a logo much better than my original idea. After the logo, Gretel asked me a series of questions for my website. I gave her only a few details and she was still able to understand me. What's surprising about her, beyond the result, is her willingness to make sure the client is completely satisfied. I would recommend Gretel to anyone, and even more, if I needed services for a logo or a website I would hire her again without any doubt.",
-        "name": "Javier",
-        "role": "Manager / Hiraldo Wood Resin LLC"
-      }
-    ]
- 
-  
+  "testimonials": [
+    
+    {
+      "quote": "I started working with Gretel with the idea of creating a website, but I didn't even have a logo. Gretel asked me what idea I had for my logo, and with my idea she made some samples — but she also added her own ideas based on what I was looking for and on her own judgment. After so many examples, I was able to choose a logo much better than my original idea. After the logo, Gretel asked me a series of questions for my website. I gave her only a few details and she was still able to understand me. What's surprising about her, beyond the result, is her willingness to make sure the client is completely satisfied. I would recommend Gretel to anyone, and even more, if I needed services for a logo or a website I would hire her again without any doubt.",
+      "name": "Javier",
+      "role": "Manager / Hiraldo Wood Resin LLC"
+    }
+  ]
 }

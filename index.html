@@ -6,14 +6,25 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <meta name="description" content="Gretel Alvarez Tang is a bilingual web designer and developer based in Louisville, KY, specializing in WordPress, custom code, and brand-driven websites.">
    <meta name="google-site-verification" content="RTpMOP6rSgO3T47Cy-ySAzgArwTyP1rlOGrGDDT1LrA" />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BYEHMP81Y0"></script>
+<!-- Google tag (gtag.js) — only on the published site, not local/dev -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  (function () {
+    var host = location.hostname;
+    var isLocal = location.protocol === 'file:' || host === '' || host === 'localhost' ||
+      host === '127.0.0.1' || host === '[::1]' || host.endsWith('.local') ||
+      /^(10|192\.168|172\.(1[6-9]|2\d|3[01]))\./.test(host);
+    if (isLocal) return;
 
-  gtag('config', 'G-BYEHMP81Y0');
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-BYEHMP81Y0';
+    document.head.appendChild(s);
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', 'G-BYEHMP81Y0');
+  })();
 </script>
 
   <title>Gretel Alvarez Tang | WordPress Web Designer, Louisville KY</title>
@@ -45,11 +56,6 @@
 </head> 
 
 <body class="home-page">
-   <div id="top_bar" class="py-2.5 px-6 ">
-    <a href="d_notes.html" class="m_text d-flex max-w-7xl text-xs mx-auto flex items-center gap-4 justify-center"  id="link_note">
-      designer notes
-    </a>
-  </div>
 
   <!-- Shared mobile / secondary header -->
   <div id="header-container"></div>
@@ -66,9 +72,6 @@
 
         <section class="sec_menu">
           <a class="nav-link m_text mosaic_btn" href="index.html?section=projects">Featured Work</a>
-          <!-- DISABLED: #skills section is commented out
-          <a class="nav-link m_text mosaic_btn" href="index.html?section=skills">skills</a>
-          -->
           <a class="nav-link m_text mosaic_btn" href="resume.html">resume</a>
           <a class="nav-link m_text mosaic_btn" href="about.html">about</a>
           <a class="nav-link m_text mosaic_btn" href="index.html?section=contact">contact</a>
@@ -104,58 +107,35 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="content">
-    <div class="projects-shell" data-aos="fade-up">
-
-      <div class="section-heading t-border" data-aos="fade-up">
-        <div>
-          <span class="text-xs uppercase">Featured Work</span>
-          <h2 class="title">Web<br>Implementation</h2>
+<!-- CASE STUDIES — replaces the whole <section id="projects"> block.
+     The id stays "projects" so your menu links (?section=projects) keep working. -->
+     <section id="projects" class="content">
+      <div class="section-shell" data-aos="fade-up">
+    
+        <div class="section-heading">
+          <div>
+            <span class="text-xs uppercase">Case Studies</span>
+            <h2 class="title">Recent work,<br>start to finish.</h2>
+          </div>
+    
+          <p class="section-intro">
+            A closer look at how each project went from a problem to a
+            finished site — the thinking, the decisions and the result.
+          </p>
         </div>
-
-        <p class="section-intro">
-          A selection of websites I designed and built, from the first
-          structure to the final implementation.
-        </p>
+    
+        <!-- Filled from projects.json by renderCaseStudies() -->
+        <div id="cs-lead"></div>
+    
+        <p class="cs-more-label text-xs uppercase">More case studies</p>
+        <ul id="cs-list" class="cs-list"></ul>
+    
+        <div class="projects-cta text-center">
+          <a href="projects.html" class="projects-btn btn text-xs">View All Projects</a>
+        </div>
+    
       </div>
-
-      <div id="p_container">
-        <div id="projects-grid" class="projects-featured-grid"></div>
-      </div>
-
-      <div class="projects-cta text-center">
-        <a href="projects.html" class="projects-btn btn text-xs">View All Projects</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-   <!--
-  
-  <section id="skills" class="content">
-    <div class="t-border" data-aos="fade-up">
-      <span class="text-xs uppercase">Skills</span>
-      <h2 id="lnk_skills" class="title">My Tool Box</h2>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill active" data-title="graphic">
-        <div class="skill-overlay"></div>
-        <div class="skill-inner"></div>
-      </div>
-
-      <div class="skill" data-title="html">
-        <div class="skill-overlay"></div>
-        <div class="skill-inner"></div>
-      </div>
-
-      <div class="skill" data-title="uiux">
-        <div class="skill-overlay"></div>
-        <div class="skill-inner"></div>
-      </div>
-    </div>
-  </section>
--->
+    </section>
 
 
   <!-- THINKING BEHIND THE VISUAL -->
@@ -651,7 +631,7 @@
   <div id="footer-container"></div>
 
   <div id="mobile-menu-btn">
-    <a href="javascript:void(0)" data-section="intro" onclick="goToSection(this)">
+    <a href="javascript:void(0)" data-section="intro">
       <i class="fa-solid fa-circle-arrow-up"></i>
     </a>
   </div>
@@ -671,12 +651,6 @@
 
   <script src="js/script.js"></script>
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());  
-    gtag('config', 'G-BYEHMP81Y0');
-  </script>
  </body>
 
 </html>

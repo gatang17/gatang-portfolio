@@ -91,23 +91,23 @@
       "subtitle": "Divi",
       "category": "WordPress",
       "client": "Uncle Boojie's",
-      "headline": "Four pages, four ways to make content easier to read",
-      "tagline": "I designed four pages for Uncle Boojie's website, each with a different kind of content, from an editorial page and a long blog post to an eleven-chapter document and the Experience page.",
+      "headline": "Five pages, five ways to make content easier to read",
+      "tagline": "I designed five pages for Uncle Boojie's website, each with a different kind of content, from an editorial page and a long blog post to an eleven-chapter document, the Experience page and a cocktail recipe book.",
       "role": "Web Design Intern",
       "scope": "Page design · UX · Build",
       "cardStack": "WordPress • Divi • Custom CSS",
       "year": "2026",
       "featured": true,
       "lead": true,
-      "summary": "Website work for Uncle Boojie's, a Kentucky business that offers bourbon tastings, a brunch with Highland cows and a series of signature experiences. Four pages designed in Divi during my internship at Andrew Kung Group, each with its own content and its own design decisions.",
+      "summary": "Website work for Uncle Boojie's, a Kentucky business that offers bourbon tastings, a brunch with Highland cows and a series of signature experiences. Five pages designed in Divi during my internship at Andrew Kung Group, each with its own content and its own design decisions.",
       "description": {
-        "text": "During my internship at Andrew Kung Group, I designed four pages for Uncle Boojie's website. Each one had a different kind of content: an editorial page, a long blog post, a long-form document with eleven chapters, and the Experience page. Each one needed its own answer to the same question: how do I make this content easier to read, follow and act on?",
+        "text": "During my internship at Andrew Kung Group, I designed five pages for Uncle Boojie's website. Each one had a different kind of content: an editorial page, a long blog post, a long-form document with eleven chapters, the Experience page and a cocktail recipe book. Each one needed its own answer to the same question: how do I make this content easier to read, follow and act on?",
         "images": [
           "images/projects/uncleboojies/ub_0d.png"
         ]
       },
       "impact": {
-        "text": "Across the four pages, the content became easier to scan, follow and act on, with one consistent visual system across desktop, tablet and mobile. For me, the project was real practice in working inside an existing site and within a client's rules: using only the client's existing text, documenting every decision, and presenting versions for approval before building the final one.",
+        "text": "Across the five pages, the content became easier to scan, follow and act on, with one consistent visual system across desktop, tablet and mobile. For me, the project was real practice in working inside an existing site and within a client's rules: using only the client's existing text, documenting every decision, and presenting versions for approval before building the final one.",
         "images": []
       },
       "technologies": [
@@ -129,7 +129,8 @@
         "Chart and highlighted phrases for a long blog post",
         "Side menu and accordion for an eleven-chapter document",
         "Card system and pre-filled request form for the Experience page",
-        "Consistent button system across pages"
+        "Consistent button system across pages",
+        "Recipe cards that open on the photo, with download and share"
       ],
       "images": [
         "images/projects/uncleboojies/ub_0d.png",
@@ -140,7 +141,7 @@
       "more": "projects.html",
       "stats": [
         {
-          "value": "4",
+          "value": "5",
           "label": "Pages designed"
         },
         {
@@ -272,6 +273,58 @@
               ]
             }
           ]
+        },
+        {
+          "page": "Cocktails",
+          "label": "Recipe book",
+          "intro": "Twelve house cocktails, presented as a recipe book that leads to the shop and to the Homeplace.",
+          "decisions": [
+            {
+              "title": "Two directions, one choice",
+              "why": "The recipes were published as images. Moving them into text makes each one searchable, readable by screen readers and easy to share on its own. I sketched two directions for the client, an editorial layout and a recipe book, and she chose the recipe book: the story at the top and the cocktails below.",
+              "images": [
+                "images/projects/uncleboojies/ub_c5_sketch_1.png",
+                "images/projects/uncleboojies/ub_c5_sketch_2.png"
+              ]
+            },
+            {
+              "title": "The recipe opens on the photo",
+              "why": "Tapping a photo shows its recipe on top of it, at the same size as the image, so the grid stays clean and nobody leaves the page. Each recipe links to the products used in it, so the page works as a quiet path to the shop.",
+              "images": [
+                "images/projects/uncleboojies/ub_c5_1.png",
+                "images/projects/uncleboojies/ub_c5_2.png"
+              ]
+            },
+            {
+              "title": "Cocktails first on mobile",
+              "why": "On mobile, the story is cut short with \"Read more\" so the cocktails show up right away. The name sits above each photo, and the photos switch to a taller format so the full recipe fits inside.",
+              "images": [
+                "images/projects/uncleboojies/ub_c5_3.png"
+              ]
+            },
+            {
+              "title": "Find a cocktail without distractions",
+              "why": "A dropdown opens the chosen recipe in a pop-up, for visitors who already know what they're looking for.",
+              "images": [
+                "images/projects/uncleboojies/ub_c5_4.png"
+              ]
+            },
+            {
+              "title": "A recipe you can keep and share",
+              "why": "A download button turns the recipe, as it's published on the site, into an image with the logo and the web address, so a saved recipe always matches the website and still says where it came from. A share button sends a direct link that opens the page with that recipe already open.",
+              "images": [
+                "images/projects/uncleboojies/ub_c5_5.png"
+              ]
+            },
+            {
+              "title": "Two ways to go further",
+              "why": "After the recipes, the page offers the products used in them and an invitation to Shakers & Thieves, for visitors who would rather taste the cocktails than make them.",
+              "images": [
+                "images/projects/uncleboojies/ub_c5_6.png"
+              ]
+            }
+          ],
+          "url": "https://www.uncleboojies.com/test_cocktail/"
         }
       ],
       "agency": "Andrew Kung Group",
@@ -718,7 +771,7 @@
           "location": "Louisville, KY",
           "period": "Sep 2026 – Present",
           "responsibilities": [
-            "Designed and built four pages for the Uncle Boojie's Bourbon website in WordPress (Divi), working independently within the site's existing visual style; the firm reviewed and approved the final work.",
+            "Designed and built five pages for the Uncle Boojie's Bourbon website in WordPress (Divi), working independently within the site's existing visual style; the firm reviewed and approved the final work.",
             "Designed a chapter navigation system for an 11-chapter page: a side menu on desktop that becomes an accordion on mobile.",
             "Restructured the Experience page into a card system with a details lightbox and a request form that fills in the selected experience automatically.",
             "Explored and documented eight design versions, presenting each one for review before building the final page.",
